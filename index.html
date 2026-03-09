@@ -5,70 +5,76 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Title here</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/buttons.css"
+        <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="04b19.woff2" as="font" type="font/woff2" crossorigin>
     </head>
 
     <body>
 
-        <header>
-            <img src="https://cdn-icons-png.flaticon.com/128/3781/3781609.png" alt="Logo of MechTeam" width="32" height="32">
+        <header class="column-container centered-container">
+            <img src="assets/media/img/logo.png" alt="Logo of MechTeam" width="64" height="64">
             <nav>
-                <a href="index.html">Начало</a> |
-                <a href="#">Изтегли!</a> |
-                <a href="#">За нас</a>
+                <button class="ui-btn"><a href="index.html">Начало</a></button>
+                <button class="ui-btn"><a href="index.html">Изтегли!</a></button>
+                <button class="ui-btn"><a href="index.html">За нас</a></button>
             </nav>
         </header>
 
         <main>
 
             <!-- The header below should be stylized and overlayed on top of the gameplay image -->
-            <h1> MechTeam </h1>
-            <img src="https://cdn-icons-png.flaticon.com/128/3781/3781609.png" alt="Picture of MechTeam">
-            
+            <div class="banner centered-container">
+                <img src="assets/media/img/splash.png" alt="Picture of MechTeam">
+            </div>
+
             <section>
 
                 <h2>Нова стратегическа игра!</h2>
                 <!-- Pictures should be to the right of description -->
                 <article>
                     <p>
-                        (Кратко описание на играта)
+                        <b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </article>
-                <img src="https://cdn-icons-png.flaticon.com/128/3781/3781609.png" alt="Gameplay image showing mech construction">
-                <img src="https://cdn-icons-png.flaticon.com/128/3781/3781609.png" alt="Gameplay image showing mech combat">
+                <div class="vertical-split-container">
+                    <div class="left-side">
+                        <img src="assets/media/img/example.png" alt="Gameplay image showing mech construction">
+                    </div>
+                    <div class="right-side">
+                        <img src="assets/media/img/example.png" alt="Gameplay image showing mech combat">
+                    </div>
+                </div>
 
             </section>
 
             <div class="vertical-split-container">
 
-                <section class="left-side">
+                <section class="left-side-large iframe-container">
 
                     <!-- Add gameplay video below; remove header -->
                     <h2>Gameplay видео</h2>
-                    <iframe alt="Gameplay video of MechTeam"></iframe>
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/sMDKtp9KYLs?si=8BusG1XSGotZor-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 </section>
 
-                <section class="right-side">
+                <section class="right-side-small">
 
                     <!-- Section needs a better name; Should be to the right of video -->
                     <h2>Режими на игра</h2>
                     <article class="alt-row-1">
                         <!-- Each feature description should be overlayed on top of the feature image -->
-                        <div class="captioned-image">
-                            <h3><strong>feature 1</strong></h3>
-                            <img src="https://cdn-icons-png.flaticon.com/128/3781/3781609.png" alt="Image of feature 1">
+                        <div class="image-container">
+                            <!--<div class="image-caption"><h3><strong>feature 1</strong></h3></div>-->
+                            <img src="assets/media/img/MechConstruction.PNG" alt="Image of feature 1">
                         </div>
                     </article>
                     <article class="alt-row-2">
-                        <div class="captioned-image">
-                            <h3><strong>feature 2</strong></h3>
-                            <img src="https://cdn-icons-png.flaticon.com/128/3781/3781609.png" alt="Image of feature 2">
-                        </div>
-                    </article>
-                    <article class="alt-row-1">
-                        <div class="captioned-image">
-                            <h3><strong>feature 3</strong></h3>
-                            <img src="https://cdn-icons-png.flaticon.com/128/3781/3781609.png" alt="Image of feature 3">
+                        <div class="image-container">
+                            <!--<div class="image-caption"><h3><strong>feature 2</strong></h3></div>-->
+                            <img src="assets/media/img/Combat.png" alt="Image of feature 2">
                         </div>
                     </article>
 
@@ -78,9 +84,9 @@
             
 
             <!-- News and updates sections should be side to side -->
-            <div class="vertical-split-container">
+            <div class="column-container centered-container">
 
-                    <section class="left-side">
+                    <section>
 
                         <h2>Новини</h2>
                         <article>
@@ -93,7 +99,7 @@
 
                     </section>
 
-                    <section class="right-side">
+                    <section>
 
                         <h2>Ъпдейти</h2>
                         <article>
