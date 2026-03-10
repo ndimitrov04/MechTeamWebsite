@@ -4,19 +4,39 @@
     margin: 0px;
 }
 
+.absolute {
+    position: fixed;
+    top: 0px;
+    background-color: rgba(188, 132, 169, 0);
+    z-index: 5;
+}
+
+.frost-backdrop {
+    backdrop-filter: blur(16px);
+    mask-image: linear-gradient(
+        to bottom,
+        black 0% 90%,
+        transparent 100%
+    );
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
 header {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+
 .banner {
-    min-width: 90%;
-    max-width: 100%;
+    margin-top: 100px;
+}
+
+.banner ~ * {
+    padding: 25px;
 }
 
 body {
@@ -35,6 +55,7 @@ h1, h2 {
 
 p {
     padding: 5px;
+    padding-bottom: 25px;
 }
 
 .vertical-split-container {
@@ -104,5 +125,5 @@ p {
 }
 
 .alt-row-2 {
-    background-color: #FDB1A4;
+    background-color: #CD90B9;
 }
