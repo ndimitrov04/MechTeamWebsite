@@ -30,6 +30,13 @@ header {
     padding-bottom: 20px;
 }
 
+.left {
+    float: left
+}
+
+.right {
+    float: right
+}
 
 .banner {
     margin-top: 100px;
@@ -111,7 +118,9 @@ p {
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 5px;
 }
 
 .responsive-iframe {
