@@ -1,5 +1,5 @@
 .fullscreen-bg {
-    background-image: url("/assets/media/img/example.png");
+    background-image: url("../../assets/media/img/splash.png");
     background-size: cover;
     background-position: center;
     background-color: transparent;
