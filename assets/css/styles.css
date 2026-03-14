@@ -20,6 +20,15 @@
     );
 }
 
+.ground-backdrop {
+    background-image: url("../../assets/media/img/bgtiles/groundtile.png");
+    background-repeat: repeat;
+}
+
+.ground-backdrop h2 {
+    color: #ced6e0;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -28,6 +37,12 @@ html, body {
 header {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+footer {
+    background-image: url("../../assets/media/img/bgtiles/groundtile.png");
+    background-repeat: repeat;
+    color: #ced6e0;
 }
 
 .left {
@@ -53,7 +68,7 @@ body {
 }
 
 header ~ * {
-    background-color: #CED6E0;
+    background-color: #ced6e0;
 }
 
 h1, h2 {
@@ -66,31 +81,25 @@ p {
 }
 
 .vertical-split-container {
-    float: left;
+    display: flex;
     width: 100%;
     padding: 5px;
+    align-items: stretch;
+    gap: 5px;
 }
 
-.left-side {
-    float: left;
-    width: 50%;
-    padding: 5px;
-}
-
+.left-side,
 .right-side {
-    float: right;
-    width: 50%;
+    flex: 1;
     padding: 5px;
 }
 
 .left-side-large {
-    float: left;
-    width: 65%;
+    flex: 2;
 }
 
 .right-side-small {
-    float: right;
-    width: 33%;
+    flex: 1;
 }
 
 .image-container {
@@ -98,6 +107,11 @@ p {
     position: relative;
     text-align: center;
     z-index: 0;
+}
+
+.showcase-element {
+    height: 45vh;
+    object-fit: cover;
 }
 
 .image-caption {
@@ -117,7 +131,7 @@ p {
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    align-items: stretch;
     padding-left: 15px;
     padding-right: 15px;
     gap: 5px;
@@ -131,8 +145,23 @@ p {
 
 .alt-row-1 {
     background-color: #55648C;
+    color: #CED6E0;
+    text-align: left;
 }
 
 .alt-row-2 {
     background-color: #CD90B9;
+    text-align: right;
+}
+
+.news-container {
+    padding: 15px;
+}
+
+.news-element {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
 }

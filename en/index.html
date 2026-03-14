@@ -5,17 +5,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MechTeam</title>
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="stylesheet" href="../assets/css/reset.css">
-        <link rel="stylesheet" href="../assets/css/buttons.css">
+        <link rel="icon" type="image/x-icon" href="/assets/media/img/logo.png">
+        <link rel="stylesheet" href="../../assets/css/styles.css">
+        <link rel="stylesheet" href="../../assets/css/reset.css">
+        <link rel="stylesheet" href="../../assets/css/buttons.css">
         <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="04b19.woff2" as="font" type="font/woff2" crossorigin>
     </head>
 
-    <body>
+    <body> 
 
         <header class="column-container centered-container absolute frost-backdrop">
-            <img src="../assets/media/img/logo.png" alt="Logo of MechTeam" width="64" height="64">
+            <img src="../../assets/media/img/logo.png" alt="Logo of MechTeam" width="64" height="64">
             <nav class="column-container">
                 <a href="index.html"><button class="ui-btn"><span>Home</span></button></a>
                 <a href="play.html"><button class="ui-btn"><span>Play!</span></button></a>
@@ -31,24 +32,24 @@
 
             <!-- The header below should be stylized and overlayed on top of the gameplay image -->
             <div class="banner centered-container">
-                <img src="../assets/media/img/splash-grad2.png" alt="Picture of MechTeam">
+                <img src="../../assets/media/img/splash-grad2.png" alt="Picture of MechTeam">
             </div>
 
             <section>
 
                 <h2>New Strategy Game!</h2>
-                <!-- Pictures should be to the right of description -->
                 <article>
                     <p>
-                        <b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <b>MechTeam</b> is a chaotic 2D platforming strategy game in which you must build your own mech, hire a squad to control it and face powerful enemy mechs in combat!
                     </p>
                 </article>
-                <div class="vertical-split-container alt-row-1">
-                    <div class="left-side alt-row-2">
-                        <img src="../assets/media/img/example.png" alt="Gameplay image showing mech construction">
+                <!-- This section might make for a good js gallery later on. -->
+                <div class="vertical-split-container">
+                    <div class="left-side image-container">
+                        <img class="showcase-element centered-container" src="../../assets/media/img/gameplay/build.png" alt="Gameplay image showing mech construction">
                     </div>
-                    <div class="right-side alt-row-2">
-                        <img src="../assets/media/img/example.png" alt="Gameplay image showing mech combat">
+                    <div class="right-side image-container">
+                        <img class="showcase-element centered-container" src="../../assets/media/img/gameplay/minigames.png" alt="Gameplay image showing mech combat">
                     </div>
                 </div>
 
@@ -72,13 +73,13 @@
                         <!-- Each feature description should be overlayed on top of the feature image -->
                         <div class="image-container">
                             <!--<div class="image-caption"><h3><strong>feature 1</strong></h3></div>-->
-                            <img src="../assets/media/img/MechConstruction.PNG" alt="Image of feature 1">
+                            <img src="../../assets/media/img/MechConstruction.PNG" alt="Image of Mech Construction">
                         </div>
                     </article>
                     <article class="alt-row-2">
                         <div class="image-container">
                             <!--<div class="image-caption"><h3><strong>feature 2</strong></h3></div>-->
-                            <img src="../assets/media/img/Combat.png" alt="Image of feature 2">
+                            <img src="../../assets/media/img/Combat.png" alt="Image of Mech Combat">
                         </div>
                     </article>
 
@@ -88,34 +89,62 @@
             
 
             <!-- News and updates sections should be side to side -->
-            <div class="column-container centered-container">
+            <div class="column-container">
 
-                    <section>
+                    <section class="left-side" style="background-color: #55648C;">
 
-                        <h2>News</h2>
-                        <article>
-                            <ul>
-                                <li><strong>feature 1</strong></li>
-                                <li><strong>feature 2</strong></li>
-                                <li><strong>feature 3</strong></li>
-                            </ul>
+                        <h2 style="color: white;">News</h2>
+                        <article class="alt-row-1 news-container">
+                            <b>03/14/2026</b><br> Started work on a full roadmap for Mechteam! Stay tuned.
+                            <img class="news-element" src="../../assets/media/img/example.png" alt="Image showing WIP roadmap for MechTeam">
+                        </article>
+                        <article class="alt-row-2 news-container">
+                            <b>03/10/2026</b><br> Released an early open alpha of MechTeam on Itch.io! 
+                            <iframe class="news-element" frameborder="0" src="https://itch.io/embed/4292454?bg_color=CED6E0&amp;fg_color=232A3F&amp;link_color=566988&amp;border_color=4d5469"></iframe>
+                        </article>
+                        <article class="alt-row-1 news-container">
+                            <b>01/21/2026</b> <br> Began MechTeam development.
                         </article>
 
                     </section>
+                    
+                    <section class="right-side" style="background-color: #55648C;">
 
-                    <section>
-
-                        <h2>Patch Notes</h2>
-                        <article>
+                        <h2 style="color: white;">Patch Notes</h2>
+                        <article class="alt-row-1 news-container">
+                            <b>03/12/2026 - Ver 0.331</b>
+                            <br><b>Lots of bugfixes!</b>
+                            <br>
                             <ul>
-                                <li><strong>feature 1</strong></li>
-                                <li><strong>feature 2</strong></li>
-                                <li><strong>feature 3</strong></li>
+                                <li>Skybox bug - Fixed</li>
+                                <li>Shield description - Updated</li>
+                                <li>Invincible Shield - Fixed</li>
+                                <li>Infinite mech jumps - Fixed</li>
+                                <li>Mechs now need tracks to move</li>
+                                <li>Rams and shields multiply themselves - fixed</li>
+                                <li>Placing units on top of supply boxes makes units unfireable - Fixed</li>
+                                <li>Removing objects while in the tracks menu leads to weird editor interactions - Fixed</li>
+                                <li>You can place objects on top of eachother - Fixed</li>
+                                <li>You can place blocks on top of eachother - Fixed</li>
                             </ul>
                         </article>
-
+                        <article class="alt-row-2 news-container">
+                            <b>03/11/2026 - Ver 0.33</b>
+                            <br>Added a jetpack to the game and lowered base jump height.
+                        </article>
+                        <article class="alt-row-1 news-container">
+                            <b>03/08/2026 - Ver 0.32</b>
+                            <br>Added a plasma cannon to the game; Added a settings menu to the game.
+                        </article>
+                        <article class="alt-row-2 news-container">
+                            <b>03/07/2026 - Ver 0.31</b>
+                            <br>Tweaked game balance.
+                        </article>
+                        <article class="alt-row-1 news-container">
+                            <b>03/04/2026 - Ver 0.30</b>
+                            <br>Revamped UI.
+                        </article>
                     </section>
-
             </div>
 
         </main>
@@ -123,7 +152,8 @@
         <hr>
 
         <footer>
-            Contact us at: example@gmail.com
+            <!-- Make an actual footer; Include social media links; Include random shortform content -->
+            Contact us at: nikx0486@gmail.com
         </footer>
 
     </body>

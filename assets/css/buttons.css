@@ -1,6 +1,6 @@
 /* From Uiverse.io by faxriddin20 */ 
 .ui-btn {
-  --btn-default-bg: #cd90b9;
+  --btn-default-bg: #566a89;
   --btn-padding: 15px 20px;
   --btn-hover-bg: #2e2e35;
   --btn-transition: 0.3s;
@@ -8,7 +8,7 @@
   --btn-animation-duration: 1.2s;
   --btn-shadow-color: rgba(0, 0, 0, 0.137);
   --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #566a89;
+  --hover-btn-color: #cd90b9;
   --default-btn-color: #fff;
   --font-size: 16px;
   /* 👆 this field should not be empty */
@@ -21,6 +21,7 @@
 
 .ui-btn {
   box-sizing: border-box;
+  height: 58px;
   padding: var(--btn-padding);
   display: flex;
   align-items: center;
