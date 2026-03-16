@@ -1,132 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MechTeam</title>
-        <link rel="icon" type="image/x-icon" href="/assets/media/img/logo.png">
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="stylesheet" href="../assets/css/reset.css">
-        <link rel="stylesheet" href="../assets/css/buttons.css">
-        <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="04b19.woff2" as="font" type="font/woff2" crossorigin>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechTeam</title>
+    <!-- Favicon path updated relative to /en folder -->
+    <link rel="icon" type="image/x-icon" href="../assets/media/img/logo.png">
 
-    <body>
+    <!-- CSS paths updated relative to /en folder -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
 
-        <header class="column-container centered-container absolute frost-backdrop">
-            <img src="../assets/media/img/logo.png" alt="Logo of MechTeam" width="64" height="64">
-            <nav class="column-container">
-                <a href="index.html"><button class="ui-btn"><span>Начало</span></button></a>
-                <a href="play.html"><button class="ui-btn"><span>Играй!</span></button></a>
-                <!-- <a href="about.html"><button class="ui-btn"><span>За нас</span></button></a> -->
-            </nav>
-            <nav class="column-container"> 
-                <a href="../en/index.html"><button class="ui-btn"><span>EN</span></button></a>
-                <a href="index.html"><button class="ui-btn"><span>БГ</span></button></a>
-            </nav>
-        </header>
+    <!-- Fonts (preload paths unchanged if they are in root or CDN) -->
+    <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="04b19.woff2" as="font" type="font/woff2" crossorigin>
+</head>
 
-        <main>
+<body> 
 
-            <!-- The header below should be stylized and overlayed on top of the gameplay image -->
-            <div class="banner centered-container">
-                <img src="../assets/media/img/splash-grad2.png" alt="Picture of MechTeam">
-            </div>
+    <header class="column-container centered-container absolute frost-backdrop">
+        <img src="../assets/media/img/logo.png" alt="Лого на MechTeam" width="64" height="64">
 
-            <section>
+        <nav class="column-container">
+            <a href="index.html"><button class="ui-btn"><span>Начало</span></button></a>
+            <a href="play.html"><button class="ui-btn"><span>Играй!</span></button></a>
+            <!-- <a href="about.html"><button class="ui-btn"><span>За нас</span></button></a> -->
+        </nav>
 
-                <h2>Нова стратегическа игра!</h2>
-                <!-- Pictures should be to the right of description -->
-                <article>
-                    <p>
-                        <b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </article>
-                <div class="vertical-split-container alt-row-1">
-                    <div class="left-side alt-row-2">
-                        <img src="../assets/media/img/example.png" alt="Gameplay image showing mech construction">
-                    </div>
-                    <div class="right-side alt-row-2">
-                        <img src="../assets/media/img/example.png" alt="Gameplay image showing mech combat">
-                    </div>
+        <nav class="column-container">
+            <a href="../en/index.html"><button class="ui-btn"><span>EN</span></button></a>
+            <a href="../bg/index.html"><button class="ui-btn"><span>БГ</span></button></a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="banner centered-container">
+            <img src="../assets/media/img/splash-grad2.png" alt="Снимка на MechTeam">
+        </div>
+
+        <section>
+            <h2>Нова стратегическа игра!</h2>
+            <article>
+                <p>
+                    <b>MechTeam</b> е хаотична 2D платформена стратегическа игра, в която трябва да построите свой собствен робот, да наемете екип, който да го управлява, и да се изправите срещу мощни вражески роботи в битка!
+                </p>
+            </article>
+
+            <div class="vertical-split-container">
+                <div class="left-side image-container">
+                    <img class="showcase-element centered-container" src="../assets/media/img/gameplay/build.png" alt="Геймплей изображение показващо конструиране на робот">
                 </div>
+                <div class="right-side image-container">
+                    <img class="showcase-element centered-container" src="../assets/media/img/gameplay/minigames.png" alt="Геймплей изображение показващо бой с робот">
+                </div>
+            </div>
+        </section>
+
+        <div class="vertical-split-container flow-to-pink">
+
+            <section class="left-side-large iframe-container">
+                <h2>Геимплей видео</h2>
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/sMDKtp9KYLs?si=8BusG1XSGotZor-k" title="YouTube видео плейър" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section class="right-side-small">
+                <h2>Режими на игра</h2>
+
+                <article class="alt-row-1">
+                    <div class="image-container">
+                        <img src="../assets/media/img/MechConstruction.PNG" alt="Изображение на конструиране на робот">
+                    </div>
+                </article>
+
+                <article class="alt-row-2">
+                    <div class="image-container">
+                        <img src="../assets/media/img/Combat.png" alt="Изображение на бой с робот">
+                    </div>
+                </article>
 
             </section>
 
-            <div class="vertical-split-container">
+        </div>
 
-                <section class="left-side-large iframe-container">
+        <div class="column-container">
 
-                    <!-- Add gameplay video below; remove header -->
-                    <h2>Gameplay видео</h2>
-                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/sMDKtp9KYLs?si=8BusG1XSGotZor-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <img class="background-image" src="../assets/media/img/example.png">
 
-                </section>
+            <section class="left-side frost-backdrop">
+                <h2>Новини</h2>
+                <article class="alt-row-1-t news-container">
+                    <b>14.03.2026</b><br> Започната работа по пълен план за развитие на MechTeam!
+                    <img class="news-element" src="../assets/media/img/example.png" alt="Изображение показващо WIP roadmap за MechTeam">
+                </article>
+                <article class="alt-row-2-t news-container">
+                    <b>10.03.2026</b><br> Пусната ранна алфа версия на MechTeam в Itch.io! 
+                    <iframe class="news-element" frameborder="0" src="https://itch.io/embed/4292454?bg_color=CED6E0&amp;fg_color=232A3F&amp;link_color=566988&amp;border_color=4d5469"></iframe>
+                </article>
+                <article class="alt-row-1-t news-container">
+                    <b>21.01.2026</b><br> Започната разработка на MechTeam.
+                </article>
+            </section>
 
-                <section class="right-side-small">
+            <section class="right-side frost-backdrop">
+                <h2>Бележки по ъпдейти</h2>
+                <article class="alt-row-1-t news-container">
+                    <b>12.03.2026 - Вер. 0.331</b>
+                    <br><b>Много корекции на бъгове!</b>
+                    <br>
+                    <ul>
+                        <li>Бъг със skybox - Коригиран</li>
+                        <li>Описание на щит - Актуализирано</li>
+                        <li>Неуязвим щит - Коригиран</li>
+                        <li>Безкрайни скокове на робот - Коригирани</li>
+                        <li>Роботите сега се нуждаят от вериги/колела за да се движат</li>
+                        <li>Ядрата на щитовете се мултиплицират при поставяне - Коригирано</li>
+                        <li>Поставянето на единици върху кутии със ресурси ги прави неотстраними - Коригирано</li>
+                        <li>Премахването на обекти докато е избран обект от менюто с вериги/колела води до странни взаимодействия между игровите системи - Коригирано</li>
+                        <li>Може да се поставят обекти един върху друг - Коригирано</li>
+                        <li>Може да се поставят блокове един върху друг - Коригирано</li>
+                    </ul>
+                </article>
+                <article class="alt-row-2-t news-container">
+                    <b>11.03.2026 - Вер. 0.33</b>
+                    <br>Добавен е джетпак и е намалена основната височина на скок.
+                </article>
+                <article class="alt-row-1-t news-container">
+                    <b>08.03.2026 - Вер. 0.32</b>
+                    <br>Добавена е плазмено оръдие; Добавено е меню за настройки.
+                </article>
+                <article class="alt-row-2-t news-container">
+                    <b>07.03.2026 - Вер. 0.31</b>
+                    <br>Настроен баланс на играта.
+                </article>
+                <article class="alt-row-1-t news-container">
+                    <b>04.03.2026 - Вер. 0.30</b>
+                    <br>Преработен потребителски интерфейс.
+                </article>
+            </section>
+        </div>
 
-                    <!-- Section needs a better name; Should be to the right of video -->
-                    <h2>Режими на игра</h2>
-                    <article class="alt-row-1">
-                        <!-- Each feature description should be overlayed on top of the feature image -->
-                        <div class="image-container">
-                            <!--<div class="image-caption"><h3><strong>feature 1</strong></h3></div>-->
-                            <img src="../assets/media/img/MechConstruction.PNG" alt="Image of feature 1">
-                        </div>
-                    </article>
-                    <article class="alt-row-2">
-                        <div class="image-container">
-                            <!--<div class="image-caption"><h3><strong>feature 2</strong></h3></div>-->
-                            <img src="../assets/media/img/Combat.png" alt="Image of feature 2">
-                        </div>
-                    </article>
+    </main>
 
-                </section>
+    <hr>
 
-            </div>
-            
+    <footer>
+        Свържете се с нас на: nikx0486@gmail.com
+    </footer>
 
-            <!-- News and updates sections should be side to side -->
-            <div class="column-container centered-container">
-
-                    <section>
-
-                        <h2>Новини</h2>
-                        <article>
-                            <ul>
-                                <li><strong>feature 1</strong></li>
-                                <li><strong>feature 2</strong></li>
-                                <li><strong>feature 3</strong></li>
-                            </ul>
-                        </article>
-
-                    </section>
-
-                    <section>
-
-                        <h2>Ъпдейти</h2>
-                        <article>
-                            <ul>
-                                <li><strong>feature 1</strong></li>
-                                <li><strong>feature 2</strong></li>
-                                <li><strong>feature 3</strong></li>
-                            </ul>
-                        </article>
-
-                    </section>
-
-            </div>
-
-        </main>
-
-        <hr>
-
-        <footer>
-            За контакт: example@gmail.com
-        </footer>
-
-    </body>
+</body>
 
 </html>
