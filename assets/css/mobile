@@ -1,0 +1,9 @@
+.mobile-hide {
+    display: inherit;
+}
+
+@media (max-width: 768px) {
+    .mobile-hide {
+        display: none;
+    }
+}
