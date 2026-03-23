@@ -118,6 +118,13 @@ p {
     gap: 5px;
 }
 
+.feed {
+    position: relative;
+    flex: 1;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
 .left-side,
 .right-side {
     position: relative;
@@ -226,6 +233,12 @@ p {
     height: auto;
     max-height: 250px;
     object-fit: cover;
+}
+
+/* All images and screenshots are pixelated, remove AA. */
+img {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 .icon {
