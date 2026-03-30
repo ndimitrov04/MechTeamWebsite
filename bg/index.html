@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MechTeam</title>
-    <!-- Favicon path updated relative to /en folder -->
+    <!-- Favicon path updated relative to /bg folder -->
     <link rel="icon" type="image/x-icon" href="../assets/media/img/logo.png">
 
-    <!-- CSS paths updated relative to /en folder -->
+    <!-- CSS paths updated relative to /bg folder -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/buttons.css">
     <link rel="stylesheet" href="../assets/css/mobile.css">
+    <link rel="stylesheet" href="../assets/css/carousel.css">
 
     <!-- Fonts (preload paths unchanged if they are in root or CDN) -->
     <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
@@ -50,14 +51,22 @@
                 </p>
             </article>
 
-            <div class="vertical-split-container">
-                <div class="left-side image-container">
-                    <img class="showcase-element centered-container" src="../assets/media/img/gameplay/build.png" alt="Геймплей изображение показващо конструиране на робот">
-                </div>
-                <div class="right-side image-container">
-                    <img class="showcase-element centered-container" src="../assets/media/img/gameplay/minigames.png" alt="Геймплей изображение показващо бой с робот">
+            <div class="carousel">
+                <div class="track">
+                    <!-- Original set of pictures -->
+                    <img src="../assets/media/img/gameplay/build.png" alt="Gameplay image showing mech construction">
+                    <img src="../assets/media/img/gameplay/fight.png" alt="Gameplay image showing mech combat">
+                    <img src="../assets/media/img/gameplay/minigames.png" alt="Gameplay image showing minigames">
+                    <img src="../assets/media/img/gameplay/rush.png" alt="Gameplay image showing the player abandoning mech to rush an enemy">
+
+                    <!-- Duplicate set for seamless loop -->
+                    <img src="../assets/media/img/gameplay/build.png" alt="Gameplay image showing mech construction">
+                    <img src="../assets/media/img/gameplay/fight.png" alt="Gameplay image showing mech combat">
+                    <img src="../assets/media/img/gameplay/minigames.png" alt="Gameplay image showing minigames">
+                    <img src="../assets/media/img/gameplay/rush.png" alt="Gameplay image showing the player abandoning mech to rush an enemy">
                 </div>
             </div>
+
         </section>
 
         <section>

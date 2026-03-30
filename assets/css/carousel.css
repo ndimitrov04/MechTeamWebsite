@@ -1,0 +1,25 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.track {
+    display: flex;
+    width: calc(240%);
+    animation: scroll 30s linear infinite;
+}
+
+.track img {
+    width: 25%; /* 4 images → each takes 25% */
+    flex-shrink: 0;
+}
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MechTeam</title>
-        <link rel="icon" type="image/x-icon" href="/assets/media/img/logo.png">
+        <link rel="icon" type="image/x-icon" href="assets/media/img/logo.png">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/buttons.css">
         <link rel="stylesheet" href="assets/css/mobile.css">
+        <link rel="stylesheet" href="assets/css/carousel.css">
         <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="04b19.woff2" as="font" type="font/woff2" crossorigin>
     </head>
@@ -44,13 +45,20 @@
                         <b>MechTeam</b> is a chaotic 2D platforming strategy game in which you must build your own mech, hire a squad to control it and face powerful enemy mechs in combat!
                     </p>
                 </article>
-                <!-- This section might make for a good js gallery later on. -->
-                <div class="vertical-split-container">
-                    <div class="left-side image-container">
-                        <img class="showcase-element centered-container" src="assets/media/img/gameplay/build.png" alt="Gameplay image showing mech construction">
-                    </div>
-                    <div class="right-side image-container">
-                        <img class="showcase-element centered-container" src="assets/media/img/gameplay/minigames.png" alt="Gameplay image showing mech combat">
+                
+                <div class="carousel">
+                    <div class="track">
+                        <!-- Original set -->
+                        <img src="assets/media/img/gameplay/build.png" alt="Gameplay image showing mech construction">
+                        <img src="assets/media/img/gameplay/fight.png" alt="Gameplay image showing mech combat">
+                        <img src="assets/media/img/gameplay/minigames.png" alt="Gameplay image showing minigames">
+                        <img src="assets/media/img/gameplay/rush.png" alt="Gameplay image showing the player abandoning mech to rush an enemy">
+
+                        <!-- Duplicate set for seamless loop -->
+                        <img src="assets/media/img/gameplay/build.png" alt="Gameplay image showing mech construction">
+                        <img src="assets/media/img/gameplay/fight.png" alt="Gameplay image showing mech combat">
+                        <img src="assets/media/img/gameplay/minigames.png" alt="Gameplay image showing minigames">
+                        <img src="assets/media/img/gameplay/rush.png" alt="Gameplay image showing the player abandoning mech to rush an enemy">
                     </div>
                 </div>
 
