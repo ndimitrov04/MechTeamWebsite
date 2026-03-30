@@ -1,0 +1,35 @@
+.mobile-hide {
+    display: inherit;
+}
+.mobile-block {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .mobile-hide {
+        display: none;
+    }
+    .mobile-block {
+        display: block;
+    }
+
+    .single-column {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .banner {
+        margin-top: 100px;
+    }
+    .vertical-split-container {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 5px;
+        padding-bottom: 45px;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+
+
+}
