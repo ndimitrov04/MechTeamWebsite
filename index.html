@@ -5,14 +5,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MechTeam</title>
+        
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <!-- Custom CSS -->
         <link rel="icon" type="image/x-icon" href="assets/media/img/logo.png">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/buttons.css">
         <link rel="stylesheet" href="assets/css/mobile.css">
         <link rel="stylesheet" href="assets/css/carousel.css">
-        <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="04b19.woff2" as="font" type="font/woff2" crossorigin>
     </head>
 
     <body> 
@@ -46,20 +50,30 @@
                     </p>
                 </article>
                 
-                <div class="carousel">
-                    <div class="track">
-                        <!-- Original set -->
-                        <img src="assets/media/img/gameplay/build.png" alt="Gameplay image showing mech construction">
-                        <img src="assets/media/img/gameplay/fight.png" alt="Gameplay image showing mech combat">
-                        <img src="assets/media/img/gameplay/minigames.png" alt="Gameplay image showing minigames">
-                        <img src="assets/media/img/gameplay/rush.png" alt="Gameplay image showing the player abandoning mech to rush an enemy">
-
-                        <!-- Duplicate set for seamless loop -->
-                        <img src="assets/media/img/gameplay/build.png" alt="Gameplay image showing mech construction">
-                        <img src="assets/media/img/gameplay/fight.png" alt="Gameplay image showing mech combat">
-                        <img src="assets/media/img/gameplay/minigames.png" alt="Gameplay image showing minigames">
-                        <img src="assets/media/img/gameplay/rush.png" alt="Gameplay image showing the player abandoning mech to rush an enemy">
+                <!-- New Carousel -->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="/assets/media/img/gameplay/fight.png" class="d-block w-100" alt="Image showing mech combat">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="/assets/media/img/gameplay/build.png" class="d-block w-100" alt="Image showing mech building">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="/assets/media/img/gameplay/minigames.png" class="d-block w-100" alt="Image showing a minigame">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="/assets/media/img/gameplay/rush.png" class="d-block w-100" alt="Image showing the player abandoning their mech to rush an enemy mech on foot">
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
             </section>
