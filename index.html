@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="assets/css/buttons.css">
         <link rel="stylesheet" href="assets/css/mobile.css">
         <link rel="stylesheet" href="assets/css/carousel.css">
+
+        <script src="assets/js/scripts.js" defer></script>
     </head>
 
     <body> 
@@ -31,6 +33,7 @@
             <nav class="column-container">
                 <a href="en/index.html"><button class="ui-btn"><span>EN</span></button></a>
                 <a href="bg/index.html"><button class="ui-btn"><span>БГ</span></button></a>
+                <button class="ui-btn" id="themeToggle"><img src="assets/media/img/icons/sun.png" height="40px" width="40px"></button>
             </nav>
         </header>
 
@@ -38,7 +41,13 @@
 
             <!-- The header below should be stylized and overlayed on top of the gameplay image -->
             <div class="banner centered-container">
-                <img src="assets/media/img/splash-grad2.png" alt="Picture of MechTeam">
+                <img 
+                class="theme-image"
+                src="assets/media/img/splash-grad2.png" 
+                data-light="assets/media/img/splash-grad2.png"
+                data-dark="assets/media/img/splash2.png"
+                alt="Picture of MechTeam"
+                >
             </div>
 
             <section>
@@ -54,16 +63,16 @@
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img src="/assets/media/img/gameplay/fight.png" class="d-block w-100" alt="Image showing mech combat">
+                        <img src="assets/media/img/gameplay/fight.png" class="d-block w-100" alt="Image showing mech combat">
                         </div>
                         <div class="carousel-item">
-                        <img src="/assets/media/img/gameplay/build.png" class="d-block w-100" alt="Image showing mech building">
+                        <img src="assets/media/img/gameplay/build.png" class="d-block w-100" alt="Image showing mech building">
                         </div>
                         <div class="carousel-item">
-                        <img src="/assets/media/img/gameplay/minigames.png" class="d-block w-100" alt="Image showing a minigame">
+                        <img src="assets/media/img/gameplay/minigames.png" class="d-block w-100" alt="Image showing a minigame">
                         </div>
                         <div class="carousel-item">
-                        <img src="/assets/media/img/gameplay/rush.png" class="d-block w-100" alt="Image showing the player abandoning their mech to rush an enemy mech on foot">
+                        <img src="assets/media/img/gameplay/rush.png" class="d-block w-100" alt="Image showing the player abandoning their mech to rush an enemy mech on foot">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -119,7 +128,13 @@
             <!-- News and updates sections should be side to side -->
             <div class="column-container">
 
-                    <img class="background-image" src="assets/media/img/example.png">
+                    <img 
+                    class="background-image theme-image"
+                    src="assets/media/img/example.png" 
+                    data-light="assets/media/img/example.png"
+                    data-dark="assets/media/img/splash2.png"
+                    alt="Picture of MechTeam"
+                    >
 
                     <section class="left-side frost-backdrop">
 
@@ -207,34 +222,34 @@
 
         <footer>
         
-                <div class="vertical-center" id="left-footer">
-                    
-                    <h3>Follow the development journey!</h3>
-
-                    <div class="column-container">
-
-                        <a href="https://nikx04.itch.io/"><img class="icon" src="assets/media/img/icons/social/IconPressed17.png"></a>
-                        <a href="https://www.youtube.com/@NikXF"><img class="icon" src="assets/media/img/icons/social/IconPressed1.png"></a>
-                        <a href="https://www.instagram.com/nikx0486/"><img class="icon" src="assets/media/img/icons/social/IconPressed8.png"></a>
-                        <a href="https://x.com/nikx0486"><img class="icon" src="assets/media/img/icons/social/IconPressed2.png"></a>
-                    
-                    </div>
+            <div class="vertical-center" id="left-footer">
                 
-                    <h3 style="padding-top: 25px;">Contact us at: nikx0486@gmail.com</h3>
+                <h3>Follow the development journey!</h3>
 
+                <div class="column-container">
+
+                    <a href="https://nikx04.itch.io/"><img class="icon" src="assets/media/img/icons/social/IconPressed17.png"></a>
+                    <a href="https://www.youtube.com/@NikXF"><img class="icon" src="assets/media/img/icons/social/IconPressed1.png"></a>
+                    <a href="https://www.instagram.com/nikx0486/"><img class="icon" src="assets/media/img/icons/social/IconPressed8.png"></a>
+                    <a href="https://x.com/nikx0486"><img class="icon" src="assets/media/img/icons/social/IconPressed2.png"></a>
+                
                 </div>
+            
+                <h3 style="padding-top: 25px;">Contact us at: nikx0486@gmail.com</h3>
 
-                <div id="right-footer">
+            </div>
 
-                    <div class="column-container">
-                        
-                        <iframe src="https://www.youtube.com/embed/vbVwtT4sLDY" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                        <iframe src="https://www.youtube.com/embed/Gza9dCTXx2k" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                        <iframe src="https://www.youtube.com/embed/YSfSYRei2I0" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
+            <div id="right-footer">
 
-                    </div>
+                <div class="column-container">
                     
+                    <iframe src="https://www.youtube.com/embed/vbVwtT4sLDY" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/Gza9dCTXx2k" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/YSfSYRei2I0" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
+
                 </div>
+                
+            </div>
         
         </footer>
 

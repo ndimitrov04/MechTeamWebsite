@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../assets/css/buttons.css">
     <link rel="stylesheet" href="../assets/css/mobile.css">
     <link rel="stylesheet" href="../assets/css/carousel.css">
+
+    <script src="../assets/js/scripts.js" defer></script>
 </head>
 
 <body> 
@@ -34,13 +36,20 @@
         <nav class="column-container">
             <a href="../en/index.html"><button class="ui-btn"><span>EN</span></button></a>
             <a href="../bg/index.html"><button class="ui-btn"><span>БГ</span></button></a>
+            <button class="ui-btn" id="themeToggle"><img src="../assets/media/img/icons/sun.png" height="40px" width="40px"></button>
         </nav>
     </header>
 
     <main>
 
         <div class="banner centered-container">
-            <img src="../assets/media/img/splash-grad2.png" alt="Снимка на MechTeam">
+            <img 
+            class="theme-image"
+            src="../assets/media/img/splash-grad2.png" 
+            data-light="../assets/media/img/splash-grad2.png"
+            data-dark="../assets/media/img/splash2.png"
+            alt="Picture of MechTeam"
+            >
         </div>
 
         <section>

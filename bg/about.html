@@ -18,6 +18,8 @@
     <!-- Fonts -->
     <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="04b19.woff2" as="font" type="font/woff2" crossorigin>
+
+    <script src="../assets/js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -44,13 +46,20 @@
             <a href="../bg/index.html">
                 <button class="ui-btn"><span>БГ</span></button>
             </a>
+            <button class="ui-btn" id="themeToggle"><img src="../assets/media/img/icons/sun.png" height="40px" width="40px"></button>
         </nav>
     </header>
 
     <main>
 
         <div class="banner centered-container">
-            <img src="../assets/media/img/splash-grad2.png" alt="Изображение на MechTeam">
+            <img 
+            class="theme-image"
+            src="../assets/media/img/splash-grad2.png" 
+            data-light="../assets/media/img/splash-grad2.png"
+            data-dark="../assets/media/img/splash2.png"
+            alt="Picture of MechTeam"
+            >
         </div>
 
         <div class="single-column">
