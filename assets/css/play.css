@@ -7,6 +7,10 @@
     background-attachment: fixed; 
 }
 
+.dark-mode {
+    background-image: url("../../assets/media/img/example-dark.png");
+}
+
 header ~ * {
     background-color: transparent;
 }
