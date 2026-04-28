@@ -1,3 +1,118 @@
+### This README contains information about the project in both English and Bulgarian
+The English version is directly below.
+### Този README файл съдържа информация за проекта на английски и български език
+Скролнете надолу за да видите българската версия.
+
+<br>
+
+# MechTeam (EN) - Contents:
+ - Brand
+ - Design system
+
+<br>
+
+# MechTeam - Brand
+
+## 1. Brand Concept
+**Slogan:**  
+Where Engineering Meets Action  
+
+**Brand Type:**  
+Product  
+
+**Mission:**  
+To merge the worlds of action and engineering.  
+
+**Target Audience:**  
+Gamers whose favorite genre is strategic action games. Fans of upgrade-based roguelike/roguelite games. Fans of games similar to *Into the Breach*, *Bad Piggies*, *Robocraft*, etc.  
+
+**Tone of Communication:**  
+Friendly, technological  
+
+**Keywords:**  
+- Mech  
+- Engineering  
+- Action  
+- Strategy  
+
+---
+
+## 2. Visual Identity
+**Logo (concept):**  
+
+- **Small Logo:**  
+  The letter **M** represented using a robotic tileset from the game.
+
+- **Large Logo:**  
+  Text: **MechTeam**  
+  - The word **Mech** is styled using the game's robotic tileset.  
+  - The word **Team** is written using an in-game font.
+
+- **Extra Large Logo:**  
+  Same as the large logo, but with additional elements:  
+  - The main character is positioned on the letter **M** in *Mech*.  
+  - An enemy stands facing the main character.  
+  - A cannon is placed next to the main character.
+
+**Color Palette (HEX codes):**  
+- #55648C  
+- #CD90B9  
+- #CED6E0  
+- #2F3137  
+
+**Typography:**  
+- Primary font: Pixelify Sans  
+- Secondary font: IBM Plex Mono  
+
+---
+
+## 3. Multimedia
+**Images:**  
+- Game screenshots  
+- Infographics  
+
+**Promotional Video:**  
+- Duration: ~1 minute  
+- Main idea: Game trailer  
+- Message: Experiment, build robots, and defeat your enemies!  
+
+**Structure:**  
+- 10–15 sec: Fast-paced action  
+- 10–15 sec: Showcasing in-game locations  
+- 10–15 sec: Robot building  
+- 5–10 sec: Final logo, call to action, and information on where the game can be played  
+
+---
+
+## 4. Website
+**Structure:**  
+- Home page  
+- Web version of the game  
+- About us  
+
+**Technologies Used:**  
+- HTML5  
+- CSS3  
+- Bootstrap 5.3  
+- JavaScript  
+- GitHub Pages  
+
+**Interactive Elements:**  
+- Bootstrap Carousel  
+- Night Mode button  
+
+---
+
+## 5. Use of Artificial Intelligence
+**Tools Used:**  
+- None  
+
+---
+
+## 6. Project Link
+https://ndimitrov04.github.io/MechTeamWebsite/
+
+<br>
 
 # MechTeam Design System - English
 
@@ -55,7 +170,117 @@ Experimental style combining:
 
 ---
 
-## Дизайн система за бранда MechTeam - Български
+<br>
+
+# MechTeam (BG) - Съдържание:
+ - Бранд
+ - Дизайн система
+
+<br>
+
+# MechTeam - Бранд
+
+## 1. Концепция на бранда
+**Слоган:**  
+Where Engineering Meets Action  
+
+**Тип на бранда:**  
+Продуктов  
+
+**Мисия:**  
+Да слее световете на екшъна и инженерството.  
+
+**Целева аудитория:**  
+Геймъри, чийто любим жанр са стратегическите екшън игри. Фенове на upgrade-based roguelike/roguelite игри. Фенове на игри от стила на *Into the Breach*, *Bad Piggies*, *Robocraft* и др.  
+
+**Тон на комуникация:**  
+Приятелски, технологичен  
+
+**Ключови думи:**  
+- Mech  
+- Engineering  
+- Action  
+- Strategy  
+
+---
+
+## 2. Визуална идентичност
+**Лого (концепция):**  
+- **Малко лого:**  
+  Буквата **M**, изобразена с роботски tileset от играта.  
+
+- **Голямо лого:**  
+  Надпис: **MechTeam**  
+  - Думата **Mech** е написана с роботски tileset от играта.  
+  - Думата **Team** е написана с шрифт от играта.  
+
+- **Много голямо лого:**  
+  Същото като голямото лого, с допълнителни елементи:  
+  - Главният герой стои върху буквата **M** в *Mech*.  
+  - Срещу него стои враг.  
+  - До главния герой има оръдие.  
+
+**Цветова палитра (HEX кодове):**  
+- #55648C  
+- #CD90B9  
+- #CED6E0  
+- #2F3137  
+
+**Типография:**  
+- Основен шрифт: Pixelify Sans  
+- Вторичен шрифт: IBM Plex Mono  
+
+---
+
+## 3. Мултимедия
+**Изображения:**  
+- Screenshots (игра)  
+- Инфографики  
+
+**Промоционално видео:**  
+- Продължителност: ~1 минута  
+- Основна идея: Трейлър на играта  
+- Послание: Експериментирайте, създавайте роботи и победете враговете си!  
+
+**Структура:**  
+- 10–15 сек.: Бърз екшън  
+- 10–15 сек.: Показване на локации в играта  
+- 10–15 сек.: Строеж на роботи  
+- 5–10 сек.: Финално лого, call to action и информация къде може да се играе играта  
+
+---
+
+## 4. Уебсайт
+**Структура:**  
+- Начална страница  
+- Страница с уеб версия на играта  
+- За нас  
+
+**Използвани технологии:**  
+- HTML5  
+- CSS3  
+- Bootstrap 5.3  
+- JavaScript  
+- GitHub Pages  
+
+**Интерактивни елементи:**  
+- Bootstrap Carousel  
+- Бутон за нощен режим  
+
+---
+
+## 5. Използване на изкуствен интелект
+**Използвани инструменти:**  
+- Няма  
+
+---
+
+## 6. Линк към проекта
+https://ndimitrov04.github.io/MechTeamWebsite/
+
+<br>
+
+# Дизайн система за бранда MechTeam - Български
 
 **Тип:** Продуктова дизайн система  
 **Име:** Модулна система MechTeam  
