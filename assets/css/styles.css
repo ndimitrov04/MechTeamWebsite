@@ -104,6 +104,19 @@ header {
     margin-top: 50px;
 }
 
+#trailer-container {
+    cursor: pointer;
+}
+
+#trailer-container img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#trailer-container:hover img {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
 .banner ~ * {
     padding: 25px;
 }

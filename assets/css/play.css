@@ -23,6 +23,7 @@ header ~ * {
 
 .responsive-iframe {
     position: relative;
+    min-height: 540px;
     width: 100%;
     height: 80vh;
 }
