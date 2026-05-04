@@ -1,198 +1,392 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MechTeam</title>
+        <!-- Favicon path updated relative to /en folder -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="../assets/media/img/logo.png"
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MechTeam</title>
-    <!-- Favicon path updated relative to /en folder -->
-    <link rel="icon" type="image/x-icon" href="../assets/media/img/logo.png">
+        <!-- CSS paths updated relative to /en folder -->
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="../assets/css/buttons.css" />
+        <link rel="stylesheet" href="../assets/css/mobile.css" />
 
-    <!-- CSS paths updated relative to /en folder -->
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/buttons.css">
-    <link rel="stylesheet" href="../assets/css/mobile.css">
+        <!-- Fonts (preload paths unchanged if they are in root or CDN) -->
+        <link
+            rel="preload"
+            href="ByteBounce.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            href="04b19.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
 
-    <!-- Fonts (preload paths unchanged if they are in root or CDN) -->
-    <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="04b19.woff2" as="font" type="font/woff2" crossorigin>
+        <script src="../assets/js/scripts.js" defer></script>
+    </head>
 
-    <script src="../assets/js/scripts.js" defer></script>
-</head>
+    <body>
+        <header
+            class="column-container centered-container absolute frost-backdrop"
+        >
+            <img
+                src="../assets/media/img/logo.png"
+                alt="Logo of MechTeam"
+                width="64"
+                height="64"
+            />
 
-<body> 
+            <nav class="column-container">
+                <a href="index.html"
+                    ><button title="Main Page" class="ui-btn">
+                        <span>Home</span>
+                    </button></a
+                >
+                <a href="play.html"
+                    ><button title="Play Game" class="ui-btn mobile-hide">
+                        <span>Play!</span>
+                    </button></a
+                >
+                <a href="about.html"
+                    ><button title="About MechTeam" class="ui-btn mobile-hide">
+                        <span>About</span>
+                    </button></a
+                >
+            </nav>
 
-    <header class="column-container centered-container absolute frost-backdrop">
-        <img src="../assets/media/img/logo.png" alt="Logo of MechTeam" width="64" height="64">
+            <nav class="column-container">
+                <a href="index.html"
+                    ><button title="English Page" class="ui-btn mobile-hide">
+                        <span>EN</span>
+                    </button></a
+                >
+                <a href="../bg/index.html"
+                    ><button title="Българска версия" class="ui-btn">
+                        <span>БГ</span>
+                    </button></a
+                >
+                <button
+                    title="Toggle Dark Mode"
+                    class="ui-btn"
+                    id="themeToggle"
+                >
+                    <img
+                        alt="Dark Mode Icon"
+                        src="../assets/media/img/icons/sun.png"
+                        height="40px"
+                        width="40px"
+                    />
+                </button>
+            </nav>
+        </header>
 
-        <nav class="column-container">
-            <a href="index.html"><button class="ui-btn"><span>Home</span></button></a>
-            <a href="play.html"><button class="ui-btn mobile-hide"><span>Play!</span></button></a>
-            <a href="about.html"><button class="ui-btn mobile-hide"><span>About</span></button></a>
-        </nav>
+        <main>
+            <div class="banner centered-container">
+                <img
+                    class="theme-image"
+                    src="../assets/media/img/splash-grad2.png"
+                    data-light="../assets/media/img/splash-grad2.png"
+                    data-dark="../assets/media/img/splash2.png"
+                    alt="Picture of MechTeam"
+                />
+            </div>
 
-        <nav class="column-container">
-            <a href="index.html"><button class="ui-btn mobile-hide"><span>EN</span></button></a>
-            <a href="../bg/index.html"><button class="ui-btn"><span>БГ</span></button></a>
-            <button class="ui-btn" id="themeToggle"><img src="../assets/media/img/icons/sun.png" height="40px" width="40px"></button>
-        </nav>
-    </header>
+            <div class="single-column">
+                <section>
+                    <h2>About MechTeam</h2>
+                    <span
+                        ><b>MechTeam</b> started development in early 2026 with
+                        a singular goal: to fuse the satisfaction of engineering
+                        with the chaotic gameplay of puzzle platformers. This
+                        game was inspired by a weird concoction of games such
+                        as: <i>Bad Piggies</i>, <i>Monster Arena</i>,
+                        <i>Hill Climb Racing</i> and <i>Into the Breach</i>. I
+                        want the game to be a digital garage for the tinkers and
+                        the giant-robot enthusiasts who believe that -
+                        <i>some assembly required</i> - is the best part of the
+                        box.</span
+                    >
 
-    <main>
+                    <h2>Where Engineering Meets Action</h2>
+                    <div class="vertical-split-container">
+                        <div class="left-side">
+                            <span
+                                >In the world of MechTeam, your creativity is
+                                your greatest weapon. Unlike traditional
+                                platformers where your abilities are set in
+                                stone, the modular mech-building system allows
+                                you to strip, swap, and calibrate every
+                                component of your machine to conquer unique
+                                environmental challenges.</span
+                            >
+                        </div>
 
-        <div class="banner centered-container">
-            <img 
-            class="theme-image"
-            src="../assets/media/img/splash-grad2.png" 
-            data-light="../assets/media/img/splash-grad2.png"
-            data-dark="../assets/media/img/splash2.png"
-            alt="Picture of MechTeam"
-            >
-        </div>
-
-        <div class="single-column">
-
-            <section>
-                
-                <h2>About MechTeam</h2>
-                <span><b>MechTeam</b> started development in early 2026 with a singular goal: to fuse the satisfaction of engineering with the chaotic gameplay of puzzle platformers. This game was inspired by a weird concoction of games such as: <i>Bad Piggies</i>, <i>Monster Arena</i>, <i>Hill Climb Racing</i> and <i>Into the Breach</i>. I want the game to be a digital garage for the tinkers and the giant-robot enthusiasts who believe that - <i>some assembly required</i> - is the best part of the box.</span>
-
-                <h2>Where Engineering Meets Action</h2>
-                <div class="vertical-split-container">
-
-                    <div class="left-side">
-                        <span>In the world of MechTeam, your creativity is your greatest weapon. Unlike traditional platformers where your abilities are set in stone, the modular mech-building system allows you to strip, swap, and calibrate every component of your machine to conquer unique environmental challenges.</span>
+                        <div class="right-side">
+                            <img
+                                class="showcase-element"
+                                src="../assets/media/img/wire.png"
+                            />
+                        </div>
                     </div>
+                </section>
 
-                    <div class="right-side">
-                        <img class="showcase-element" src="../assets/media/img/wire.png">
-                    </div>
+                <section>
+                    <h2>About the Developer</h2>
 
-                </div>
-
-            </section>
-
-            <section>
-                
-                <h2>About the Developer</h2>
-
-                <span><b>Hi!</b> My name is NikX04. I'm a passionate indie game developer who is just starting out. I've always wanted to create games ever since I was a child and am currently trying to make my dream come true. I've published a bunch of less-than successful games already, but I don't plan on giving up any time soon despite my past failures. After all, <i>being bad at something is the first step to being kind of good at something.</i> I really hope that this game succeeds and plan on giving it the best shot at doing so. </span>
-
-            </section>
-
-        </div>
-        
-        <div class="column-container">
-
-            <img 
-            class="theme-image background-image"
-            src="../assets/media/img/example.png" 
-            data-light="../assets/media/img/example.png"
-            data-dark="../assets/media/img/example-dark.png"
-            alt="Picture of MechTeam"
-            >
-
-            <div class="feed">
-                <section class="frost-backdrop">
-                    
-                    <h2>Recent News</h2>
-
-                    <article class="alt-row-1-t news-container">
-                        <h2>Tutorial Finished!</h2><h3>03/19/2026</h3>
-                        <div class="vertical-split-container">
-                            <div class="left-side">
-                                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jV7Pz03ZH_Q?si=rpfAH9zcprZWlPLn" style="max-height: 300px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <div class="right-side">
-                                <h4>Alpha Version 0.34</h4>
-                                <p>I finally finished work on the tutorial. It includes 5 stages, 3 of which are supposed to teach the player about basic combat, 1 to teach them about mechbuilding and the final one shows the player how to recruit and use crew members.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="alt-row-2-t news-container">
-                        <h2>Started work on a game roadmap</h2><h3>03/14/2026</h3>
-                        <div class="vertical-split-container">
-                            <div class="left-side">
-                                <h4>Alpha Version 0.33</h4>
-                                <p>Started work on a full roadmap for MechTeam! Stay tuned...</p>
-                            </div>
-                            <div class="right-side">
-                                <img class="news-element" src="../assets/media/img/example.png" alt="Image showing WIP roadmap for MechTeam">
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="alt-row-1-t news-container">
-                        <h2>Open Alpha Public Release</h2><h3>03/10/2026</h3>
-                        <div class="vertical-split-container">
-                            <div class="left-side">
-                                <h4>Alpha Version 0.31</h4>
-                                <p>Released an early open alpha of MechTeam on Itch.io!</p>
-                                <b>This version includes:</b>
-                                <ul>
-                                    <li>Base mechbuilding mechanics</li>
-                                    <li>Base combat and module connection mechanics</li>
-                                    <li>An interactive combat stage</li>
-                                    <li>4 Enemy mechs to fight</li>
-                                    <li>1 Friendly NPC and 1 Enemy</li>
-                                </ul>
-                            </div>
-                            <div class="right-side">
-                                <h2>Check it out!</h2>
-                                <iframe class="news-element" frameborder="0" src="https://itch.io/embed/4292454?bg_color=CED6E0&amp;fg_color=232A3F&amp;link_color=566988&amp;border_color=4d5469"></iframe>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="alt-row-2-t news-container">
-                        <h2>Began MechTeam Development</h2><h3>01/21/2026</h3>
-                        <h4>In-Dev Version 0.01</h4>
-                    </article>
-
+                    <span
+                        ><b>Hi!</b> My name is NikX04. I'm a passionate indie
+                        game developer who is just starting out. I've always
+                        wanted to create games ever since I was a child and am
+                        currently trying to make my dream come true. I've
+                        published a bunch of less-than successful games already,
+                        but I don't plan on giving up any time soon despite my
+                        past failures. After all,
+                        <i
+                            >being bad at something is the first step to being
+                            kind of good at something.</i
+                        >
+                        I really hope that this game succeeds and plan on giving
+                        it the best shot at doing so.
+                    </span>
                 </section>
             </div>
-        </div>
-
-    </main>
-
-    <hr>
-
-    <footer>
-
-        <div class="vertical-center" id="left-footer">
-            
-            <h3>Follow the development journey!</h3>
 
             <div class="column-container">
+                <img
+                    class="theme-image background-image"
+                    src="../assets/media/img/example.png"
+                    data-light="../assets/media/img/example.png"
+                    data-dark="../assets/media/img/example-dark.png"
+                    alt="Picture of MechTeam"
+                />
 
-                <a href="https://nikx04.itch.io/"><img class="icon" src="../assets/media/img/icons/social/IconPressed17.png"></a>
-                <a href="https://www.youtube.com/@NikXF"><img class="icon" src="../assets/media/img/icons/social/IconPressed1.png"></a>
-                <a href="https://www.instagram.com/nikx0486/"><img class="icon" src="../assets/media/img/icons/social/IconPressed8.png"></a>
-                <a href="https://x.com/nikx0486"><img class="icon" src="../assets/media/img/icons/social/IconPressed2.png"></a>
-            
+                <div class="feed">
+                    <section class="frost-backdrop">
+                        <h2>Recent News</h2>
+
+                        <article class="alt-row-1-t news-container">
+                            <h2>Tutorial Finished!</h2>
+                            <h3>03/19/2026</h3>
+                            <div class="vertical-split-container">
+                                <div class="left-side">
+                                    <iframe
+                                        class="responsive-iframe"
+                                        src="https://www.youtube.com/embed/jV7Pz03ZH_Q?si=rpfAH9zcprZWlPLn"
+                                        style="max-height: 300px"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="
+                                            accelerometer;
+                                            autoplay;
+                                            clipboard-write;
+                                            encrypted-media;
+                                            gyroscope;
+                                            picture-in-picture;
+                                            web-share;
+                                        "
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <div class="right-side">
+                                    <h4>Alpha Version 0.34</h4>
+                                    <p>
+                                        I finally finished work on the tutorial.
+                                        It includes 5 stages, 3 of which are
+                                        supposed to teach the player about basic
+                                        combat, 1 to teach them about
+                                        mechbuilding and the final one shows the
+                                        player how to recruit and use crew
+                                        members.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="alt-row-2-t news-container">
+                            <h2>Started work on a game roadmap</h2>
+                            <h3>03/14/2026</h3>
+                            <div class="vertical-split-container">
+                                <div class="left-side">
+                                    <h4>Alpha Version 0.33</h4>
+                                    <p>
+                                        Started work on a full roadmap for
+                                        MechTeam! Stay tuned...
+                                    </p>
+                                </div>
+                                <div class="right-side">
+                                    <img
+                                        class="news-element"
+                                        src="../assets/media/img/example.png"
+                                        alt="Image showing WIP roadmap for MechTeam"
+                                    />
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="alt-row-1-t news-container">
+                            <h2>Open Alpha Public Release</h2>
+                            <h3>03/10/2026</h3>
+                            <div class="vertical-split-container">
+                                <div class="left-side">
+                                    <h4>Alpha Version 0.31</h4>
+                                    <p>
+                                        Released an early open alpha of MechTeam
+                                        on Itch.io!
+                                    </p>
+                                    <b>This version includes:</b>
+                                    <ul>
+                                        <li>Base mechbuilding mechanics</li>
+                                        <li>
+                                            Base combat and module connection
+                                            mechanics
+                                        </li>
+                                        <li>An interactive combat stage</li>
+                                        <li>4 Enemy mechs to fight</li>
+                                        <li>1 Friendly NPC and 1 Enemy</li>
+                                    </ul>
+                                </div>
+                                <div class="right-side">
+                                    <h2>Check it out!</h2>
+                                    <iframe
+                                        class="news-element"
+                                        frameborder="0"
+                                        src="https://itch.io/embed/4292454?bg_color=CED6E0&amp;fg_color=232A3F&amp;link_color=566988&amp;border_color=4d5469"
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="alt-row-2-t news-container">
+                            <h2>Began MechTeam Development</h2>
+                            <h3>01/21/2026</h3>
+                            <h4>In-Dev Version 0.01</h4>
+                        </article>
+                    </section>
+                </div>
             </div>
-        
-            <h3 style="padding-top: 25px;">Contact us at: nikx0486@gmail.com</h3>
+        </main>
 
-        </div>
+        <hr />
 
-        <div id="right-footer">
+        <footer>
+            <div class="vertical-center" id="left-footer">
+                <h3>Follow the development journey!</h3>
 
-            <div class="column-container">
-                
-                <iframe src="https://www.youtube.com/embed/vbVwtT4sLDY" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/Gza9dCTXx2k" class="mobile-hide" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/YSfSYRei2I0" class="mobile-hide" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
+                <div class="column-container">
+                    <a
+                        title="Link to Itch.io of developer"
+                        href="https://nikx04.itch.io/"
+                        ><img
+                            alt="Link to itch.io of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed17.png"
+                    /></a>
+                    <a
+                        title="Link to Youtube of developer"
+                        href="https://www.youtube.com/@NikXF"
+                        ><img
+                            alt="Link to youtube of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed1.png"
+                    /></a>
+                    <a
+                        title="Link to Instagram of developer"
+                        href="https://www.instagram.com/nikx0486/"
+                        ><img
+                            alt="Link to instagram of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed8.png"
+                    /></a>
+                    <a
+                        title="Link to X of developer"
+                        href="https://x.com/nikx0486"
+                        ><img
+                            alt="Link to X of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed2.png"
+                    /></a>
+                </div>
 
+                <h3 style="padding-top: 25px">
+                    Contact us at: nikx0486@gmail.com
+                </h3>
             </div>
-            
-        </div>
 
-    </footer>
-
-
-</body>
-
+            <div id="right-footer">
+                <div class="column-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/vbVwtT4sLDY"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src="https://www.youtube.com/embed/Gza9dCTXx2k"
+                        class="mobile-hide"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src="https://www.youtube.com/embed/YSfSYRei2I0"
+                        class="mobile-hide"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

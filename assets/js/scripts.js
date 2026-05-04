@@ -1,7 +1,5 @@
 console.log("JS LOADED");
 
-
-
 const btn = document.getElementById("themeToggle");
 
 btn.addEventListener("click", () => {

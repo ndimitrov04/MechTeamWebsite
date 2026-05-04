@@ -100,13 +100,14 @@ Friendly, technological
 **Interactive Elements:**  
 - Bootstrap Carousel  
 - Night Mode button  
+- Banner which shows trailer when clicked
 
 ---
 
 ## 5. Use of Artificial Intelligence
 **Tools Used:**  
-- None  
-
+- ChatGPT: Copying EN files to BG folder with automatically updated links to content
+- Gemini: Visual code cleanup (formatting); Adding automatic accessibility tags for BG content, based on already created EN accessibility tags
 ---
 
 ## 6. Project Link
@@ -265,13 +266,15 @@ Where Engineering Meets Action
 
 **Интерактивни елементи:**  
 - Bootstrap Carousel  
-- Бутон за нощен режим  
+- Бутон за нощен режим
+- Банер който показва трейлър при кликване
 
 ---
 
 ## 5. Използване на изкуствен интелект
 **Използвани инструменти:**  
-- Няма  
+- ChatGPT: Копиране на EN файлове в BG папка с автоматична модификация на линкове за работа от новата директория
+- Gemini: Визуално изчистване на код (форматиране); Прилагане на тагове за достъпност в BG локализацията на база на вече написани такива в EN локализацията
 
 ---
 

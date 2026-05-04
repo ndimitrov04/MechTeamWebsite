@@ -1,83 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Play MechTeam directly in your browser. Build your mech and face enemies in this chaotic strategy game."
+        />
         <title>MechTeam</title>
-        <link rel="icon" type="image/x-icon" href="../assets/media/img/logo.png">
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="stylesheet" href="../assets/css/reset.css">
-        <link rel="stylesheet" href="../assets/css/buttons.css">
-        <link rel="stylesheet" href="../assets/css/play.css">
-        <link rel="stylesheet" href="../assets/css/mobile.css">
-        <link rel="preload" href="ByteBounce.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="04b19.woff2" as="font" type="font/woff2" crossorigin>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="../assets/media/img/logo.png"
+        />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="../assets/css/buttons.css" />
+        <link rel="stylesheet" href="../assets/css/play.css" />
+        <link rel="stylesheet" href="../assets/css/mobile.css" />
+        <link
+            rel="preload"
+            href="ByteBounce.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            href="04b19.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
 
         <script src="../assets/js/scripts.js" defer></script>
     </head>
 
     <body class="fullscreen-bg">
-
-        <header class="column-container centered-container absolute frost-backdrop">
-            
-            <img src="../assets/media/img/logo.png" alt="Logo of MechTeam" width="64" height="64">
+        <header
+            class="column-container centered-container absolute frost-backdrop"
+        >
+            <img
+                src="../assets/media/img/logo.png"
+                alt="Logo of MechTeam"
+                width="64"
+                height="64"
+            />
             <nav class="column-container">
-                <a href="index.html"><button class="ui-btn"><span>Home</span></button></a>
-                <a href="play.html"><button class="ui-btn"><span>Play!</span></button></a>
-                <a href="about.html"><button class="ui-btn"><span>About</span></button></a>
+                <a href="index.html"
+                    ><button title="Main Page" class="ui-btn">
+                        <span>Home</span>
+                    </button></a
+                >
+                <a href="play.html"
+                    ><button title="Play Game" class="ui-btn">
+                        <span>Play!</span>
+                    </button></a
+                >
+                <a href="about.html"
+                    ><button title="About MechTeam" class="ui-btn">
+                        <span>About</span>
+                    </button></a
+                >
             </nav>
             <nav class="column-container">
-                <a href="index.html"><button class="ui-btn"><span>EN</span></button></a>
-                <a href="../bg/index.html"><button class="ui-btn"><span>БГ</span></button></a>
-                <button class="ui-btn" id="themeToggle"><img src="../assets/media/img/icons/sun.png" height="40px" width="40px"></button>
+                <a href="index.html"
+                    ><button title="English Page" class="ui-btn">
+                        <span>EN</span>
+                    </button></a
+                >
+                <a href="../bg/index.html"
+                    ><button title="Българска версия" class="ui-btn">
+                        <span>БГ</span>
+                    </button></a
+                >
+                <button
+                    title="Toggle Dark Mode"
+                    class="ui-btn"
+                    id="themeToggle"
+                >
+                    <img
+                        alt="Dark Mode Icon"
+                        src="../assets/media/img/icons/sun.png"
+                        height="40px"
+                        width="40px"
+                    />
+                </button>
             </nav>
         </header>
 
         <main>
-
             <!-- Use banner class as header spacer -->
             <div class="banner"></div>
-            <div class="game-container" style="padding-top: 80px;">
-                <iframe class="responsive-iframe" src="https://itch.io/embed-upload/17339314?color=232A3F" allowfullscreen=""></iframe>
+            <div class="game-container" style="padding-top: 80px">
+                <iframe
+                    title="Play MechTeam on Itch.io"
+                    class="responsive-iframe"
+                    src="https://itch.io/embed-upload/17339314?color=232A3F"
+                    allowfullscreen=""
+                ></iframe>
             </div>
         </main>
 
-        <hr>
+        <hr />
 
         <footer>
-
             <div class="vertical-center" id="left-footer">
-                
                 <h3>Follow the development journey!</h3>
 
                 <div class="column-container">
-
-                    <a href="https://nikx04.itch.io/"><img class="icon" src="../assets/media/img/icons/social/IconPressed17.png"></a>
-                    <a href="https://www.youtube.com/@NikXF"><img class="icon mobile-hide" src="../assets/media/img/icons/social/IconPressed1.png"></a>
-                    <a href="https://www.instagram.com/nikx0486/"><img class="icon mobile-hide" src="../assets/media/img/icons/social/IconPressed8.png"></a>
-                    <a href="https://x.com/nikx0486"><img class="icon" src="../assets/media/img/icons/social/IconPressed2.png"></a>
-                
+                    <a
+                        title="Link to Itch.io of developer"
+                        href="https://nikx04.itch.io/"
+                        ><img
+                            alt="Link to itch.io of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed17.png"
+                    /></a>
+                    <a
+                        title="Link to Youtube of developer"
+                        href="https://www.youtube.com/@NikXF"
+                        ><img
+                            alt="Link to youtube of developer"
+                            class="icon mobile-hide"
+                            src="../assets/media/img/icons/social/IconPressed1.png"
+                    /></a>
+                    <a
+                        title="Link to Instagram of developer"
+                        href="https://www.instagram.com/nikx0486/"
+                        ><img
+                            alt="Link to instagram of developer"
+                            class="icon mobile-hide"
+                            src="../assets/media/img/icons/social/IconPressed8.png"
+                    /></a>
+                    <a
+                        title="Link to X of developer"
+                        href="https://x.com/nikx0486"
+                        ><img
+                            alt="Link to X of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed2.png"
+                    /></a>
                 </div>
-            
-                <h3 style="padding-top: 25px;">Contact us at: nikx0486@gmail.com</h3>
 
+                <h3 style="padding-top: 25px">
+                    Contact us at: nikx0486@gmail.com
+                </h3>
             </div>
 
             <div id="right-footer">
-
                 <div class="column-container">
-                    
-                    <iframe src="https://www.youtube.com/embed/vbVwtT4sLDY" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/Gza9dCTXx2k" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/YSfSYRei2I0" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-
+                    <iframe
+                        src="https://www.youtube.com/embed/vbVwtT4sLDY"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src="https://www.youtube.com/embed/Gza9dCTXx2k"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src="https://www.youtube.com/embed/YSfSYRei2I0"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
                 </div>
-                
             </div>
-
         </footer>
-
     </body>
-
 </html>

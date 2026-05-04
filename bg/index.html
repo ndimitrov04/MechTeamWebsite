@@ -1,249 +1,502 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bg">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Главна страница на уебсайта на MechTeam. Показва основния геймплей, новини за актуализации и трейлър на геймплея. На български език."
+        />
+        <title>MechTeam</title>
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MechTeam</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="../assets/media/img/logo.png"
+        />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/media/img/logo.png">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="../assets/css/buttons.css" />
+        <link rel="stylesheet" href="../assets/css/mobile.css" />
+        <link rel="stylesheet" href="../assets/css/carousel.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/buttons.css">
-    <link rel="stylesheet" href="../assets/css/mobile.css">
-    <link rel="stylesheet" href="../assets/css/carousel.css">
+        <script src="../assets/js/scripts.js" defer></script>
+    </head>
 
-    <script src="../assets/js/scripts.js" defer></script>
-</head>
+    <body>
+        <header
+            class="column-container centered-container absolute frost-backdrop"
+        >
+            <img
+                src="../assets/media/img/logo.png"
+                alt="Лого на MechTeam"
+                width="64"
+                height="64"
+            />
 
-<body> 
+            <nav class="column-container">
+                <a href="index.html"
+                    ><button
+                        title="Начална страница"
+                        class="ui-btn mobile-hide"
+                    >
+                        <span>Начало</span>
+                    </button></a
+                >
+                <a href="play.html"
+                    ><button title="Играй играта" class="ui-btn mobile-hide">
+                        <span>Играй!</span>
+                    </button></a
+                >
+                <a href="about.html"
+                    ><button title="За MechTeam" class="ui-btn">
+                        <span>За Нас</span>
+                    </button></a
+                >
+            </nav>
 
-    <header class="column-container centered-container absolute frost-backdrop">
-        <img src="../assets/media/img/logo.png" alt="Лого на MechTeam" width="64" height="64">
+            <nav class="column-container">
+                <a href="../en/index.html"
+                    ><button title="English Page" class="ui-btn">
+                        <span>EN</span>
+                    </button></a
+                >
+                <a href="../bg/index.html"
+                    ><button
+                        title="Българска версия"
+                        class="ui-btn mobile-hide"
+                    >
+                        <span>БГ</span>
+                    </button></a
+                >
+                <button
+                    title="Превключване на тъмен режим"
+                    class="ui-btn"
+                    id="themeToggle"
+                >
+                    <img
+                        alt="Икона за тъмен режим"
+                        src="../assets/media/img/icons/sun.png"
+                        height="40px"
+                        width="40px"
+                    />
+                </button>
+            </nav>
+        </header>
 
-        <nav class="column-container">
-            <a href="index.html"><button class="ui-btn mobile-hide"><span>Начало</span></button></a>
-            <a href="play.html"><button class="ui-btn mobile-hide"><span>Играй!</span></button></a>
-            <a href="about.html"><button class="ui-btn"><span>За Нас</span></button></a>
-        </nav>
+        <main>
+            <div class="banner centered-container" id="trailer-container">
+                <img
+                    class="theme-image"
+                    src="../assets/media/img/splash-grad2.png"
+                    data-light="../assets/media/img/splash-grad2.png"
+                    data-dark="../assets/media/img/splash2.png"
+                    alt="Picture of MechTeam"
+                />
+            </div>
 
-        <nav class="column-container">
-            <a href="../en/index.html"><button class="ui-btn"><span>EN</span></button></a>
-            <a href="../bg/index.html"><button class="ui-btn mobile-hide"><span>БГ</span></button></a>
-            <button class="ui-btn" id="themeToggle"><img src="../assets/media/img/icons/sun.png" height="40px" width="40px"></button>
-        </nav>
-    </header>
+            <section>
+                <h2>Нова стратегическа игра!</h2>
+                <article class="single-column">
+                    <p>
+                        <b>MechTeam</b> е хаотична 2D платформена стратегическа
+                        игра, в която трябва да построите свой собствен робот,
+                        да наемете екип, който да го управлява, и да се
+                        изправите срещу мощни вражески роботи в битка!
+                    </p>
+                </article>
 
-    <main>
-
-        <div class="banner centered-container" id="trailer-container">
-            <img 
-            class="theme-image"
-            src="../assets/media/img/splash-grad2.png" 
-            data-light="../assets/media/img/splash-grad2.png"
-            data-dark="../assets/media/img/splash2.png"
-            alt="Picture of MechTeam"
-            >
-        </div>
-
-        <section>
-            <h2>Нова стратегическа игра!</h2>
-            <article>
-                <p>
-                    <b>MechTeam</b> е хаотична 2D платформена стратегическа игра, в която трябва да построите свой собствен робот, да наемете екип, който да го управлява, и да се изправите срещу мощни вражески роботи в битка!
-                </p>
-            </article>
-
-            <!-- New Carousel -->
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="../assets/media/img/gameplay/fight.png" class="d-block w-100" alt="Изображение показващо бой с роботи">
+                <!-- New Carousel -->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="../assets/media/img/gameplay/fight.png"
+                                class="d-block w-100"
+                                alt="Изображение показващо бой с роботи"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../assets/media/img/gameplay/build.png"
+                                class="d-block w-100"
+                                alt="Изображение показващо конструиране на робот"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../assets/media/img/gameplay/minigames.png"
+                                class="d-block w-100"
+                                alt="Изображение показващо мини-игра"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../assets/media/img/gameplay/rush.png"
+                                class="d-block w-100"
+                                alt="Изображение показващо как играчът напуска своя робот за да атакува вражески робот пеша"
+                            />
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                    <img src="../assets/media/img/gameplay/build.png" class="d-block w-100" alt="Изображение показващо конструиране на робот">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../assets/media/img/gameplay/minigames.png" class="d-block w-100" alt="Изображение показващо мини-игра">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../assets/media/img/gameplay/rush.png" class="d-block w-100" alt="Изображение показващо как играчът напуска своя робот за да атакува вражески робот пеша">
-                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </section>
+
+            <section>
+                <h2>Ъпдейт</h2>
+                <h2>4 Нови Нива!</h2>
+                <video
+                    class="responsive-iframe background-image"
+                    src="../assets/media/video/stage_showcase.mp4"
+                    autoplay
+                    loop
+                    muted
+                ></video>
+            </section>
+
+            <div class="vertical-split-container flow-to-pink">
+                <section class="left-side-large iframe-container">
+                    <h2>Геимплей видео</h2>
+                    <iframe
+                        title="Гледайте в YouTube"
+                        class="responsive-iframe"
+                        src="https://www.youtube.com/embed/sMDKtp9KYLs?si=8BusG1XSGotZor-k"
+                        title="YouTube видео плейър"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </section>
+
+                <section class="right-side-small">
+                    <h2>Режими на игра</h2>
+
+                    <article class="alt-row-1">
+                        <div class="image-container">
+                            <img
+                                src="../assets/media/img/MechConstruction.PNG"
+                                alt="Изображение на конструиране на робот"
+                            />
+                        </div>
+                    </article>
+
+                    <article class="alt-row-2">
+                        <div class="image-container">
+                            <img
+                                src="../assets/media/img/Combat.png"
+                                alt="Изображение на бой с робот"
+                            />
+                        </div>
+                    </article>
+                </section>
             </div>
 
-        </section>
+            <div class="column-container mobile-block">
+                <img
+                    class="theme-image background-image"
+                    src="../assets/media/img/example.png"
+                    data-light="../assets/media/img/example.png"
+                    data-dark="../assets/media/img/example-dark.png"
+                    alt="Picture of MechTeam"
+                />
 
-        <section>
-            <h2> Ъпдейт </h2>
-            <h2> 4 Нови Нива!</h2>
-            <video class="responsive-iframe background-image" src="../assets/media/video/stage_showcase.mp4" autoplay loop muted></video>
-        </section>
+                <section class="left-side frost-backdrop">
+                    <h2>Новини</h2>
+                    <article class="alt-row-1-t news-container">
+                        <b>19.03.2026</b><br />
+                        Създаден Tutorial
+                        <iframe
+                            class="responsive-iframe"
+                            src="https://www.youtube.com/embed/jV7Pz03ZH_Q?si=rpfAH9zcprZWlPLn"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="
+                                accelerometer;
+                                autoplay;
+                                clipboard-write;
+                                encrypted-media;
+                                gyroscope;
+                                picture-in-picture;
+                                web-share;
+                            "
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="max-height: 350px"
+                            allowfullscreen
+                        ></iframe>
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>14.03.2026</b><br />
+                        Започната работа по пълен план за развитие на MechTeam!
+                        <img
+                            class="news-element"
+                            src="../assets/media/img/example.png"
+                            alt="Изображение показващо WIP roadmap за MechTeam"
+                        />
+                    </article>
+                    <article class="alt-row-1-t news-container">
+                        <b>10.03.2026</b><br />
+                        Пусната ранна алфа версия на MechTeam в Itch.io!
+                        <iframe
+                            title="Връзка към играта в itch.io"
+                            class="news-element"
+                            frameborder="0"
+                            src="https://itch.io/embed/4292454?bg_color=CED6E0&amp;fg_color=232A3F&amp;link_color=566988&amp;border_color=4d5469"
+                        ></iframe>
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>21.01.2026</b><br />
+                        Започната разработка на MechTeam.
+                    </article>
+                </section>
 
-        <div class="vertical-split-container flow-to-pink">
-
-            <section class="left-side-large iframe-container">
-                <h2>Геимплей видео</h2>
-                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/sMDKtp9KYLs?si=8BusG1XSGotZor-k" title="YouTube видео плейър" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
-
-            <section class="right-side-small">
-                <h2>Режими на игра</h2>
-
-                <article class="alt-row-1">
-                    <div class="image-container">
-                        <img src="../assets/media/img/MechConstruction.PNG" alt="Изображение на конструиране на робот">
-                    </div>
-                </article>
-
-                <article class="alt-row-2">
-                    <div class="image-container">
-                        <img src="../assets/media/img/Combat.png" alt="Изображение на бой с робот">
-                    </div>
-                </article>
-
-            </section>
-
-        </div>
-
-        <div class="column-container mobile-block">
-
-            <img 
-            class="theme-image background-image"
-            src="../assets/media/img/example.png" 
-            data-light="../assets/media/img/example.png"
-            data-dark="../assets/media/img/example-dark.png"
-            alt="Picture of MechTeam"
-            >
-
-            <section class="left-side frost-backdrop">
-                <h2>Новини</h2>
-                <article class="alt-row-1-t news-container">
-                    <b>19.03.2026</b><br> Създаден Tutorial
-                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jV7Pz03ZH_Q?si=rpfAH9zcprZWlPLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>14.03.2026</b><br> Започната работа по пълен план за развитие на MechTeam!
-                    <img class="news-element" src="../assets/media/img/example.png" alt="Изображение показващо WIP roadmap за MechTeam">
-                </article>
-                <article class="alt-row-1-t news-container">
-                    <b>10.03.2026</b><br> Пусната ранна алфа версия на MechTeam в Itch.io! 
-                    <iframe class="news-element" frameborder="0" src="https://itch.io/embed/4292454?bg_color=CED6E0&amp;fg_color=232A3F&amp;link_color=566988&amp;border_color=4d5469"></iframe>
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>21.01.2026</b><br> Започната разработка на MechTeam.
-                </article>
-            </section>
-
-            <section class="right-side frost-backdrop">
-                <h2>Ъпдейти</h2>
-                <article class="alt-row-1-t news-container">
-                <b>26.03.2026 - Версия 0.36</b>
-                <br>Напълно преработена физиката на играта
-                    <ul>
-                        <li>Роботите вече имат тегло</li>
-                        <li>Колкото по-голямо е теглото на робот, толкова повече мощност на двигателя му е нужна, за да се движи бързо</li>
-                        <li>Добавянето на повече колела дава по-добро сцепление и повече двигателна мощност</li>
-                        <li>Снарядите вече избутват роботите назад при контакт</li>
-                        <li>Роботите имат по-реалистични физики</li>
-                    </ul>
-                </article>
-                <article class="alt-row-2-t news-container">
-                <b>25.03.2026 - Версия 0.35</b>
-                <br>Добавена е система за навигация на NPC
-                <br>Добавен е вражески дрон, който се опитва да влезе в меха на играча и да създаде хаос!
-                </article>
-                <article class="alt-row-1-t news-container">
-                    <b>19.03.2026 - Вер. 0.34</b>
-                    <br>Към играта е добавен Tutorial.
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>12.03.2026 - Вер. 0.331</b>
-                    <br><b>Много корекции на бъгове!</b>
-                    <br>
-                    <ul>
-                        <li>Бъг със skybox - Коригиран</li>
-                        <li>Описание на щит - Актуализирано</li>
-                        <li>Неуязвим щит - Коригиран</li>
-                        <li>Безкрайни скокове на робот - Коригирани</li>
-                        <li>Роботите сега се нуждаят от вериги/колела за да се движат</li>
-                        <li>Ядрата на щитовете се мултиплицират при поставяне - Коригирано</li>
-                        <li>Поставянето на единици върху кутии със ресурси ги прави неотстраними - Коригирано</li>
-                        <li>Премахването на обекти докато е избран обект от менюто с вериги/колела води до странни взаимодействия между игровите системи - Коригирано</li>
-                        <li>Може да се поставят обекти един върху друг - Коригирано</li>
-                        <li>Може да се поставят блокове един върху друг - Коригирано</li>
-                    </ul>
-                </article>
-                <article class="alt-row-1-t news-container">
-                    <b>11.03.2026 - Вер. 0.33</b>
-                    <br>Добавен е джетпак и е намалена основната височина на скок.
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>08.03.2026 - Вер. 0.32</b>
-                    <br>Добавена е плазмено оръдие; Добавено е меню за настройки.
-                </article>
-                <article class="alt-row-1-t news-container">
-                    <b>07.03.2026 - Вер. 0.31</b>
-                    <br>Настроен баланс на играта.
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>04.03.2026 - Вер. 0.30</b>
-                    <br>Преработен потребителски интерфейс.
-                </article>
-            </section>
-        </div>
-
-    </main>
-
-    <hr>
-
-    <footer>
-
-        <div class="vertical-center" id="left-footer">
-            
-            <h3>Социални Мрежи</h3>
-
-            <div class="column-container">
-
-                <a href="https://nikx04.itch.io/"><img class="icon" src="../assets/media/img/icons/social/IconPressed17.png"></a>
-                <a href="https://www.youtube.com/@NikXF"><img class="icon" src="../assets/media/img/icons/social/IconPressed1.png"></a>
-                <a href="https://www.instagram.com/nikx0486/"><img class="icon" src="../assets/media/img/icons/social/IconPressed8.png"></a>
-                <a href="https://x.com/nikx0486"><img class="icon" src="../assets/media/img/icons/social/IconPressed2.png"></a>
-            
+                <section class="right-side frost-backdrop">
+                    <h2>Ъпдейти</h2>
+                    <article class="alt-row-1-t news-container">
+                        <b>26.03.2026 - Версия 0.36</b>
+                        <br />Напълно преработена физиката на играта
+                        <ul>
+                            <li>Роботите вече имат тегло</li>
+                            <li>
+                                Колкото по-голямо е теглото на робот, толкова
+                                повече мощност на двигателя му е нужна, за да се
+                                движи бързо
+                            </li>
+                            <li>
+                                Добавянето на повече колела дава по-добро
+                                сцепление и повече двигателна мощност
+                            </li>
+                            <li>
+                                Снарядите вече избутват роботите назад при
+                                контакт
+                            </li>
+                            <li>Роботите имат по-реалистични физики</li>
+                        </ul>
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>25.03.2026 - Версия 0.35</b>
+                        <br />Добавена е система за навигация на NPC
+                        <br />Добавен е вражески дрон, който се опитва да влезе
+                        в меха на играча и да създаде хаос!
+                    </article>
+                    <article class="alt-row-1-t news-container">
+                        <b>19.03.2026 - Вер. 0.34</b>
+                        <br />Към играта е добавен Tutorial.
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>12.03.2026 - Вер. 0.331</b>
+                        <br /><b>Много корекции на бъгове!</b>
+                        <br />
+                        <ul>
+                            <li>Бъг със skybox - Коригиран</li>
+                            <li>Описание на щит - Актуализирано</li>
+                            <li>Неуязвим щит - Коригиран</li>
+                            <li>Безкрайни скокове на робот - Коригирани</li>
+                            <li>
+                                Роботите сега се нуждаят от вериги/колела за да
+                                се движат
+                            </li>
+                            <li>
+                                Ядрата на щитовете се мултиплицират при
+                                поставяне - Коригирано
+                            </li>
+                            <li>
+                                Поставянето на единици върху кутии със ресурси
+                                ги прави неотстраними - Коригирано
+                            </li>
+                            <li>
+                                Премахването на обекти докато е избран обект от
+                                менюто с вериги/колела води до странни
+                                взаимодействия между игровите системи -
+                                Коригирано
+                            </li>
+                            <li>
+                                Може да се поставят обекти един върху друг -
+                                Коригирано
+                            </li>
+                            <li>
+                                Може да се поставят блокове един върху друг -
+                                Коригирано
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="alt-row-1-t news-container">
+                        <b>11.03.2026 - Вер. 0.33</b>
+                        <br />Добавен е джетпак и е намалена основната височина
+                        на скок.
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>08.03.2026 - Вер. 0.32</b>
+                        <br />Добавена е плазмено оръдие; Добавено е меню за
+                        настройки.
+                    </article>
+                    <article class="alt-row-1-t news-container">
+                        <b>07.03.2026 - Вер. 0.31</b>
+                        <br />Настроен баланс на играта.
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>04.03.2026 - Вер. 0.30</b>
+                        <br />Преработен потребителски интерфейс.
+                    </article>
+                </section>
             </div>
-        
-            <h3 style="padding-top: 25px;">Свържете се с нас на: nikx0486@gmail.com</h3>
+        </main>
 
-        </div>
+        <hr />
 
-        <div id="right-footer">
+        <footer>
+            <div class="vertical-center" id="left-footer">
+                <h3>Социални Мрежи</h3>
 
-            <div class="column-container">
-                
-                <iframe src="https://www.youtube.com/embed/vbVwtT4sLDY" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/Gza9dCTXx2k" class="mobile-hide" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/YSfSYRei2I0" class="mobile-hide" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
+                <div class="column-container">
+                    <a
+                        title="Връзка към Itch.io на разработчика"
+                        href="https://nikx04.itch.io/"
+                        ><img
+                            alt="Връзка към itch.io на разработчика"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed17.png"
+                    /></a>
+                    <a
+                        title="Връзка към Youtube на разработчика"
+                        href="https://www.youtube.com/@NikXF"
+                        ><img
+                            alt="Връзка към youtube на разработчика"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed1.png"
+                    /></a>
+                    <a
+                        title="Връзка към Instagram на разработчика"
+                        href="https://www.instagram.com/nikx0486/"
+                        ><img
+                            alt="Връзка към instagram на разработчика"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed8.png"
+                    /></a>
+                    <a
+                        title="Връзка към X на разработчика"
+                        href="https://x.com/nikx0486"
+                        ><img
+                            alt="Връзка към X на разработчика"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed2.png"
+                    /></a>
+                </div>
 
+                <h3 style="padding-top: 25px">
+                    Свържете се с нас на: nikx0486@gmail.com
+                </h3>
             </div>
-            
-        </div>
 
-    </footer>
-
-</body>
-
+            <div id="right-footer">
+                <div class="column-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/vbVwtT4sLDY"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src="https://www.youtube.com/embed/Gza9dCTXx2k"
+                        class="mobile-hide"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src="https://www.youtube.com/embed/YSfSYRei2I0"
+                        class="mobile-hide"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

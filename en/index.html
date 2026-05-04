@@ -1,252 +1,488 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Main page of MechTeam website. Showcases base gameplay, update news and gameplay trailer. In english."
+        />
+        <title>MechTeam</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MechTeam</title>
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- Favicon  -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="../assets/media/img/logo.png"
+        />
 
-    <!-- Favicon  -->
-    <link rel="icon" type="image/x-icon" href="../assets/media/img/logo.png">
-        
-    <!-- Custom CSS -->
-    <!-- CSS paths updated relative to /en folder -->
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/buttons.css">
-    <link rel="stylesheet" href="../assets/css/mobile.css">
-    <link rel="stylesheet" href="../assets/css/carousel.css">
-    
-    <script src="../assets/js/scripts.js" defer></script>
-</head>
+        <!-- Custom CSS -->
+        <!-- CSS paths updated relative to /en folder -->
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="../assets/css/buttons.css" />
+        <link rel="stylesheet" href="../assets/css/mobile.css" />
+        <link rel="stylesheet" href="../assets/css/carousel.css" />
 
-<body> 
+        <script src="../assets/js/scripts.js" defer></script>
+    </head>
 
-    <header class="column-container centered-container absolute frost-backdrop">
-        <img src="../assets/media/img/logo.png" alt="Logo of MechTeam" width="64" height="64">
+    <body>
+        <header
+            class="column-container centered-container absolute frost-backdrop"
+        >
+            <img
+                src="../assets/media/img/logo.png"
+                alt="Logo of MechTeam"
+                width="64"
+                height="64"
+            />
 
-        <nav class="column-container">
-            <a href="index.html"><button class="ui-btn mobile-hide"><span>Home</span></button></a>
-            <a href="play.html"><button class="ui-btn mobile-hide"><span>Play!</span></button></a>
-            <a href="about.html"><button class="ui-btn"><span>About</span></button></a>
-        </nav>
+            <nav class="column-container">
+                <a href="index.html"
+                    ><button title="Main Page" class="ui-btn mobile-hide">
+                        <span>Home</span>
+                    </button></a
+                >
+                <a href="play.html"
+                    ><button title="Play Game" class="ui-btn mobile-hide">
+                        <span>Play!</span>
+                    </button></a
+                >
+                <a href="about.html"
+                    ><button title="About MechTeam" class="ui-btn">
+                        <span>About</span>
+                    </button></a
+                >
+            </nav>
 
-        <nav class="column-container">
-            <a href="index.html"><button class="ui-btn mobile-hide"><span>EN</span></button></a>
-            <a href="../bg/index.html"><button class="ui-btn"><span>БГ</span></button></a>
-            <button class="ui-btn" id="themeToggle"><img src="../assets/media/img/icons/sun.png" height="40px" width="40px"></button>
-        </nav>
-    </header>
+            <nav class="column-container">
+                <a href="index.html"
+                    ><button title="English Page" class="ui-btn mobile-hide">
+                        <span>EN</span>
+                    </button></a
+                >
+                <a href="../bg/index.html"
+                    ><button title="Българска версия" class="ui-btn">
+                        <span>БГ</span>
+                    </button></a
+                >
+                <button
+                    title="Toggle Dark Mode"
+                    class="ui-btn"
+                    id="themeToggle"
+                >
+                    <img
+                        alt="Dark Mode Icon"
+                        src="../assets/media/img/icons/sun.png"
+                        height="40px"
+                        width="40px"
+                    />
+                </button>
+            </nav>
+        </header>
 
-    <main>
+        <main>
+            <div class="banner centered-container" id="trailer-container">
+                <img
+                    class="theme-image"
+                    src="../assets/media/img/splash-grad2.png"
+                    data-light="../assets/media/img/splash-grad2.png"
+                    data-dark="../assets/media/img/splash2.png"
+                    alt="Picture of MechTeam"
+                />
+            </div>
 
-        <div class="banner centered-container" id="trailer-container">
-            <img 
-            class="theme-image"
-            src="../assets/media/img/splash-grad2.png" 
-            data-light="../assets/media/img/splash-grad2.png"
-            data-dark="../assets/media/img/splash2.png"
-            alt="Picture of MechTeam"
-            >
-        </div>
+            <section>
+                <h2>New Strategy Game!</h2>
+                <article class="single-column">
+                    <p>
+                        <b>MechTeam</b> is a chaotic 2D platforming strategy
+                        game in which you must build your own mech, hire a squad
+                        to control it and face powerful enemy mechs in combat!
+                    </p>
+                </article>
 
-        <section>
-            <h2>New Strategy Game!</h2>
-            <article class="single-column">
-                <p>
-                    <b>MechTeam</b> is a chaotic 2D platforming strategy game in which you must build your own mech, hire a squad to control it and face powerful enemy mechs in combat!
-                </p>
-            </article>
-
-            <!-- New Carousel -->
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="../assets/media/img/gameplay/fight.png" class="d-block w-100" alt="Image showing mech combat">
+                <!-- New Carousel -->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="../assets/media/img/gameplay/fight.png"
+                                class="d-block w-100"
+                                alt="Image showing mech combat"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../assets/media/img/gameplay/build.png"
+                                class="d-block w-100"
+                                alt="Image showing mech building"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../assets/media/img/gameplay/minigames.png"
+                                class="d-block w-100"
+                                alt="Image showing a minigame"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../assets/media/img/gameplay/rush.png"
+                                class="d-block w-100"
+                                alt="Image showing the player abandoning their mech to rush an enemy mech on foot"
+                            />
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                    <img src="../assets/media/img/gameplay/build.png" class="d-block w-100" alt="Image showing mech building">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../assets/media/img/gameplay/minigames.png" class="d-block w-100" alt="Image showing a minigame">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../assets/media/img/gameplay/rush.png" class="d-block w-100" alt="Image showing the player abandoning their mech to rush an enemy mech on foot">
-                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </section>
+
+            <section>
+                <h2>Recent Update</h2>
+                <h2>4 New Stages!</h2>
+                <video
+                    class="responsive-iframe background-image"
+                    src="../assets/media/video/stage_showcase.mp4"
+                    autoplay
+                    loop
+                    muted
+                ></video>
+            </section>
+
+            <div class="vertical-split-container flow-to-pink">
+                <section class="left-side-large iframe-container">
+                    <h2>Gameplay Video</h2>
+                    <iframe
+                        title="Play on itch!"
+                        class="responsive-iframe"
+                        src="https://www.youtube.com/embed/sMDKtp9KYLs?si=8BusG1XSGotZor-k"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </section>
+
+                <section class="right-side-small">
+                    <h2>Gamemodes</h2>
+
+                    <article class="alt-row-1">
+                        <div class="image-container">
+                            <img
+                                src="../assets/media/img/MechConstruction.PNG"
+                                alt="Image of Mech Construction"
+                            />
+                        </div>
+                    </article>
+
+                    <article class="alt-row-2">
+                        <div class="image-container">
+                            <img
+                                src="../assets/media/img/Combat.png"
+                                alt="Image of Mech Combat"
+                            />
+                        </div>
+                    </article>
+                </section>
             </div>
 
-        </section>
-        
-        <section>
-            <h2> Recent Update </h2>
-            <h2> 4 New Stages!</h2>
-            <video class="responsive-iframe background-image" src="../assets/media/video/stage_showcase.mp4" autoplay loop muted></video>
-        </section>
+            <!-- News and updates sections should be side to side -->
+            <div class="column-container mobile-block">
+                <img
+                    class="background-image theme-image"
+                    src="../assets/media/img/example.png"
+                    data-light="../assets/media/img/example.png"
+                    data-dark="../assets/media/img/example-dark.png"
+                    alt="Picture of MechTeam"
+                />
 
-        <div class="vertical-split-container flow-to-pink">
+                <section class="left-side frost-backdrop">
+                    <h2>News</h2>
+                    <article class="alt-row-1-t news-container">
+                        <b>03/19/2026</b><br />
+                        Tutorial Finished!
+                        <iframe
+                            class="responsive-iframe"
+                            src="https://www.youtube.com/embed/jV7Pz03ZH_Q?si=rpfAH9zcprZWlPLn"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="
+                                accelerometer;
+                                autoplay;
+                                clipboard-write;
+                                encrypted-media;
+                                gyroscope;
+                                picture-in-picture;
+                                web-share;
+                            "
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="max-height: 350px"
+                            allowfullscreen
+                        ></iframe>
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>03/14/2026</b><br />
+                        Started work on a full roadmap for MechTeam! Stay tuned.
+                        <img
+                            class="news-element"
+                            src="../assets/media/img/example.png"
+                            alt="Image showing WIP roadmap for MechTeam"
+                        />
+                    </article>
+                    <article class="alt-row-1-t news-container">
+                        <b>03/10/2026</b><br />
+                        Released an early open alpha of MechTeam on Itch.io!
+                        <iframe
+                            title="Link to game on itch.io"
+                            class="news-element"
+                            frameborder="0"
+                            src="https://itch.io/embed/4292454?bg_color=CED6E0&amp;fg_color=232A3F&amp;link_color=566988&amp;border_color=4d5469"
+                        ></iframe>
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>01/21/2026</b><br />
+                        Began MechTeam development.
+                    </article>
+                </section>
 
-            <section class="left-side-large iframe-container">
-                <h2>Gameplay Video</h2>
-                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/sMDKtp9KYLs?si=8BusG1XSGotZor-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
-
-            <section class="right-side-small">
-                <h2>Gamemodes</h2>
-
-                <article class="alt-row-1">
-                    <div class="image-container">
-                        <img src="../assets/media/img/MechConstruction.PNG" alt="Image of Mech Construction">
-                    </div>
-                </article>
-
-                <article class="alt-row-2">
-                    <div class="image-container">
-                        <img src="../assets/media/img/Combat.png" alt="Image of Mech Combat">
-                    </div>
-                </article>
-
-            </section>
-
-        </div>
-
-        <div class="column-container mobile-block">
-
-            <img 
-            class="theme-image background-image"
-            src="../assets/media/img/example.png" 
-            data-light="../assets/media/img/example.png"
-            data-dark="../assets/media/img/example-dark.png"
-            alt="Picture of MechTeam"
-            >
-
-            <section class="left-side frost-backdrop">
-                <h2>News</h2>
-                <article class="alt-row-1-t news-container">
-                    <b>03/19/2026</b><br> Tutorial Finished!
-                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jV7Pz03ZH_Q?si=rpfAH9zcprZWlPLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>03/14/2026</b><br> Started work on a full roadmap for MechTeam! Stay tuned.
-                    <img class="news-element" src="../assets/media/img/example.png" alt="Image showing WIP roadmap for MechTeam">
-                </article>
-                <article class="alt-row-1-t news-container">
-                    <b>03/10/2026</b><br> Released an early open alpha of MechTeam on Itch.io! 
-                    <iframe class="news-element" frameborder="0" src="https://itch.io/embed/4292454?bg_color=CED6E0&amp;fg_color=232A3F&amp;link_color=566988&amp;border_color=4d5469"></iframe>
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>01/21/2026</b><br> Began MechTeam development.
-                </article>
-            </section>
-
-            <section class="right-side frost-backdrop">
-                <h2>Patch Notes</h2>
-                <article class="alt-row-1-t news-container">
-                   <b>03/26/2026 - Ver 0.36</b>
-                   <br>Completely overhauled the game's physics
-                    <ul>
-                        <li>Mechs have weight now</li>
-                        <li>The higher the weight of a mech, the more engine power it needs to move quickly</li>
-                        <li>Adding more wheels gives the mech more traction + engine power</li>
-                        <li>Projectiles now knock mechs back</li>
-                        <li>Mechs have more realistic physics</li>
-                    </ul>
-                </article>
-                <article class="alt-row-2-t news-container">
-                   <b>03/25/2026 - Ver 0.35</b>
-                   <br>Added an NPC navigation system
-                   <br>Added an enemy drone which tries to get inside the player's mech and wreack havoc!
-                </article>
-                <article class="alt-row-1-t news-container">
-                    <b>03/19/2026 - Ver 0.34</b>
-                    <br>Added an ingame tutorial!
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>03/12/2026 - Ver 0.331</b>
-                    <br><b>Lots of bugfixes!</b>
-                    <br>
-                    <ul>
-                        <li>Skybox bug - Fixed</li>
-                        <li>Shield description - Updated</li>
-                        <li>Invincible Shield - Fixed</li>
-                        <li>Infinite mech jumps - Fixed</li>
-                        <li>Mechs now need tracks to move</li>
-                        <li>Rams and shields multiply themselves - fixed</li>
-                        <li>Placing units on top of supply boxes makes units unfireable - Fixed</li>
-                        <li>Removing objects while in the tracks menu leads to weird editor interactions - Fixed</li>
-                        <li>You can place objects on top of each other - Fixed</li>
-                        <li>You can place blocks on top of each other - Fixed</li>
-                    </ul>
-                </article>
-                <article class="alt-row-1-t news-container">
-                    <b>03/11/2026 - Ver 0.33</b>
-                    <br>Added a jetpack to the game and lowered base jump height.
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>03/08/2026 - Ver 0.32</b>
-                    <br>Added a plasma cannon to the game; Added a settings menu to the game.
-                </article>
-                <article class="alt-row-1-t news-container">
-                    <b>03/07/2026 - Ver 0.31</b>
-                    <br>Tweaked game balance.
-                </article>
-                <article class="alt-row-2-t news-container">
-                    <b>03/04/2026 - Ver 0.30</b>
-                    <br>Revamped UI.
-                </article>
-            </section>
-        </div>
-
-    </main>
-
-    <hr>
-
-    <footer>
-
-        <div class="vertical-center" id="left-footer">
-            
-            <h3>Follow the development journey!</h3>
-
-            <div class="column-container">
-
-                <a href="https://nikx04.itch.io/"><img class="icon" src="../assets/media/img/icons/social/IconPressed17.png"></a>
-                <a href="https://www.youtube.com/@NikXF"><img class="icon" src="../assets/media/img/icons/social/IconPressed1.png"></a>
-                <a href="https://www.instagram.com/nikx0486/"><img class="icon" src="../assets/media/img/icons/social/IconPressed8.png"></a>
-                <a href="https://x.com/nikx0486"><img class="icon" src="../assets/media/img/icons/social/IconPressed2.png"></a>
-            
+                <section class="right-side frost-backdrop">
+                    <h2>Patch Notes</h2>
+                    <article class="alt-row-1-t news-container">
+                        <b>03/26/2026 - Ver 0.36</b>
+                        <br />Completely overhauled the game's physics
+                        <ul>
+                            <li>Mechs have weight now</li>
+                            <li>
+                                The higher the weight of a mech, the more engine
+                                power it needs to move quickly
+                            </li>
+                            <li>
+                                Adding more wheels gives the mech more traction
+                                + engine power
+                            </li>
+                            <li>Projectiles now knock mechs back</li>
+                            <li>Mechs have more realistic physics</li>
+                        </ul>
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>03/25/2026 - Ver 0.35</b>
+                        <br />Added an NPC navigation system <br />Added an
+                        enemy drone which tries to get inside the player's mech
+                        and wreack havoc!
+                    </article>
+                    <article class="alt-row-1-t news-container">
+                        <b>03/19/2026 - Ver 0.34</b>
+                        <br />Added an ingame tutorial!
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>03/12/2026 - Ver 0.331</b>
+                        <br /><b>Lots of bugfixes!</b>
+                        <br />
+                        <ul>
+                            <li>Skybox bug - Fixed</li>
+                            <li>Shield description - Updated</li>
+                            <li>Invincible Shield - Fixed</li>
+                            <li>Infinite mech jumps - Fixed</li>
+                            <li>Mechs now need tracks to move</li>
+                            <li>
+                                Rams and shields multiply themselves - fixed
+                            </li>
+                            <li>
+                                Placing units on top of supply boxes makes units
+                                unfireable - Fixed
+                            </li>
+                            <li>
+                                Removing objects while in the tracks menu leads
+                                to weird editor interactions - Fixed
+                            </li>
+                            <li>
+                                You can place objects on top of each other -
+                                Fixed
+                            </li>
+                            <li>
+                                You can place blocks on top of each other -
+                                Fixed
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="alt-row-1-t news-container">
+                        <b>03/11/2026 - Ver 0.33</b>
+                        <br />Added a jetpack to the game and lowered base jump
+                        height.
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>03/08/2026 - Ver 0.32</b>
+                        <br />Added a plasma cannon to the game; Added a
+                        settings menu to the game.
+                    </article>
+                    <article class="alt-row-1-t news-container">
+                        <b>03/07/2026 - Ver 0.31</b>
+                        <br />Tweaked game balance.
+                    </article>
+                    <article class="alt-row-2-t news-container">
+                        <b>03/04/2026 - Ver 0.30</b>
+                        <br />Revamped UI.
+                    </article>
+                </section>
             </div>
-        
-            <h3 style="padding-top: 25px;">Contact us at: nikx0486@gmail.com</h3>
+        </main>
 
-        </div>
+        <hr />
 
-        <div id="right-footer">
+        <footer>
+            <div class="vertical-center" id="left-footer">
+                <h3>Follow the development journey!</h3>
 
-            <div class="column-container">
-                
-                <iframe src="https://www.youtube.com/embed/vbVwtT4sLDY" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/Gza9dCTXx2k" class="mobile-hide" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/YSfSYRei2I0" class="mobile-hide" width="135" height="240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="max-height: 350px;"allowfullscreen></iframe>
+                <div class="column-container">
+                    <a
+                        title="Link to Itch.io of developer"
+                        href="https://nikx04.itch.io/"
+                        ><img
+                            alt="Link to itch.io of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed17.png"
+                    /></a>
+                    <a
+                        title="Link to Youtube of developer"
+                        href="https://www.youtube.com/@NikXF"
+                        ><img
+                            alt="Link to youtube of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed1.png"
+                    /></a>
+                    <a
+                        title="Link to Instagram of developer"
+                        href="https://www.instagram.com/nikx0486/"
+                        ><img
+                            alt="Link to instagram of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed8.png"
+                    /></a>
+                    <a
+                        title="Link to X of developer"
+                        href="https://x.com/nikx0486"
+                        ><img
+                            alt="Link to X of developer"
+                            class="icon"
+                            src="../assets/media/img/icons/social/IconPressed2.png"
+                    /></a>
+                </div>
 
+                <h3 style="padding-top: 25px">
+                    Contact us at: nikx0486@gmail.com
+                </h3>
             </div>
-            
-        </div>
 
-    </footer>
-
-
-</body>
-
+            <div id="right-footer">
+                <div class="column-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/vbVwtT4sLDY"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src="https://www.youtube.com/embed/Gza9dCTXx2k"
+                        class="mobile-hide"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src="https://www.youtube.com/embed/YSfSYRei2I0"
+                        class="mobile-hide"
+                        width="135"
+                        height="240"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="max-height: 350px"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
