@@ -22,13 +22,13 @@
 }
 
 .dark-mode .banner ~ * img {
-    filter: brightness(0.35), contrast(1.1);
-    opacity: 0.6;
+    filter: brightness(0.65), contrast(1.1);
+    opacity: 0.8;
 }
 
 .dark-mode .banner ~ * video {
-    filter: brightness(0.35), contrast(1.1);
-    opacity: 0.6;
+    filter: brightness(0.65), contrast(1.1);
+    opacity: 0.8;
 }
 
 .dark-mode header img,
@@ -314,6 +314,11 @@ p {
 .carousel-item img {
     object-fit: scale-down;
     max-height: 700px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    mix-blend-mode: difference;
 }
 
 /* All images and screenshots are pixelated, remove AA. */

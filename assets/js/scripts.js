@@ -10,7 +10,7 @@ btn.addEventListener("click", () => {
         "theme",
         document.body.classList.contains("dark-mode") ? "dark" : "light"
     );
-    window.location.reload(true);
+    window.location.reload();
 });
 // Load saved theme
 if (localStorage.getItem("theme") === "dark") {
